@@ -17,7 +17,7 @@ either find out, flag it explicitly as unverified, or do not write it.
 
 - **Engine: LuaLaTeX, always.** Never pdflatex or XeLaTeX. The templates
   require `fontspec`/`unicode-math`, which LuaLaTeX handles natively.
-- **Style file: `modern.sty`** from this repo (`layout-templates`). Copy it
+- **Style file: `modern.sty`** from this repo (`latex-tools`). Copy it
   into the project directory alongside the `.tex` file. It provides the fonts
   (TeX Gyre Pagella body and math, Optima-family headings), 1.2 line stretch,
   geometry, `microtype`, `biblatex`, and `hyperref`. Do not re-load or
@@ -211,12 +211,17 @@ Unless instructed otherwise, always produce **two PDFs** from the same
 source: an annotated build with all notes visible (for human review) and a
 clean build with notes disabled (the document as it would circulate).
 
-```sh
-# Annotated review copy -> main-annotated.pdf
-latexmk -lualatex -jobname=main-annotated main.tex
+**Naming convention:** the clean build keeps the document's own name; the
+annotated build appends `-annotated` to the base name via `-jobname`. So a
+document `report.tex` produces `report.pdf` (clean) and
+`report-annotated.pdf` (annotated).
 
-# Clean copy, notes disabled -> main.pdf
-latexmk -lualatex -usepretex='\PassOptionsToPackage{disable}{todonotes}' main.tex
+```sh
+# Annotated review copy -> report-annotated.pdf
+latexmk -lualatex -jobname=report-annotated report.tex
+
+# Clean copy, notes disabled -> report.pdf
+latexmk -lualatex -usepretex='\PassOptionsToPackage{disable}{todonotes}' report.tex
 ```
 
 The `disable` option turns every `\todo`-based command and `\listoftodos`
