@@ -57,10 +57,17 @@ either find out, flag it explicitly as unverified, or do not write it.
 
 \begin{document}
 % ...
-\listoftodos  % index of all provenance notes; a no-op in the clean build
 \printbibliography
+
+% Index of all provenance notes, last in the document and retitled.
+% A no-op in the clean build, optional argument and all.
+\listoftodos[Review notes]
 \end{document}
 ```
+
+The note index goes **after** `\printbibliography`, so it is the very last
+thing in the annotated PDF, and it is titled **"Review notes"** rather than
+`todonotes`' default "Todo list". Section 7 explains both.
 
 ## 2. Writing style
 
@@ -75,6 +82,9 @@ Write in a formal academic register throughout.
   "may be somewhat higher").
 - No filler, no promotional language, no rhetorical questions. Claims should
   be precise enough to be falsifiable.
+- Write for a reader with no access to the project repository. Paths,
+  commands, script names, and any other reference to the code stay out of the
+  manuscript text and live in the provenance notes instead (Section 6).
 - In-prose citations are author-year: `\citet{key}` for "Smith (2020) shows"
   and `\citep{key}` for "(Smith, 2020)". Footnotes follow APA style.
 - Math: `amsmath` environments only (`equation`, `align`, `aligned`; never
@@ -205,6 +215,46 @@ throwaway session without committing the code that produces it.
   drawn in TikZ, with the `.tex` source likewise kept in the repo and
   pointed to by a `FIG:` note.
 
+### The repository is invisible to the manuscript
+
+**Keep every reference to the project repository inside the provenance notes.
+Nothing about the code may appear in the manuscript text itself.** The clean
+PDF is the document as it circulates, and its readers have no access to the
+repository and no reason to care how it is laid out. The annotated PDF is the
+working document, and its reader is a reviewer checking your arithmetic, who
+needs exactly that information. Confining repository references to the notes
+keeps each build addressed to its own audience.
+
+Concretely, none of the following belongs in the manuscript body, in a
+section heading, in a caption, in a table, or in a footnote:
+
+- file and directory paths (`analysis/<slug>/`, `figures/<slug>/make_fig.py`);
+- commands that run the code, and lists of them in the order they must run;
+- names of scripts, modules, functions, output files, or variables in the code;
+- a "Reproduction", "Code availability", or "Replication files" section that
+  exists to tell the reader how to re-run the analysis;
+- statements about the code's internal organization, such as which module a
+  routine lives in or which scripts share it.
+
+All of it goes in `CALC:`, `FIG:`, and `DATA:` notes instead, where
+`\listoftodos` gathers it into an index the reviewer can work through. If a
+piece of repository information seems too important to hide from the clean
+build, that is a sign it is not really repository information: restate the
+substance in prose without naming the code. "The predictive distribution is
+obtained from 50,000 simulated paths" belongs in the text; "written by
+`run.py` with seed 20260831" belongs in the note attached to it.
+
+Two things are not exceptions to this rule, because they are not references to
+the project repository. The first is a published, citable data source or
+software package, which is a normal bibliography entry and is cited in the
+text as any other work would be. The second is a passage the document quotes
+verbatim, such as a reproduced prompt or a quoted email, where altering the
+text to remove a path would misrepresent the source.
+
+Build instructions and a description of the repository layout are still worth
+writing. They belong in the project's `README.md`, which is where a
+collaborator with repository access will look for them, not in the manuscript.
+
 ## 7. Build both PDFs
 
 Unless instructed otherwise, always produce **two PDFs** from the same
@@ -233,6 +283,35 @@ differ between the builds when inline notes are present; that is normal.
 After building, check the log of the annotated build for `todonotes`
 warnings about collided or off-page notes and fix them per Section 5.
 
+### Where the note index goes, and what it is called
+
+**Put `\listoftodos` after `\printbibliography`, as the last thing in the
+document.** The references are part of the manuscript and belong with it; the
+note index is apparatus for the reviewer and belongs after everything the
+manuscript itself contains. Placing it last also makes the annotated build a
+clean superset of the circulating document: everything up to the end of the
+bibliography is the manuscript, and everything after it is review material.
+An index sitting between the last section and the references splits the
+manuscript in two and reads as though it were content.
+
+**Title the index "Review notes".** `todonotes` calls it "Todo list", which
+misdescribes it: these notes are not outstanding work items, they are
+provenance records, and most of them are complete rather than pending. Pass
+the title through the optional argument of `\listoftodos`:
+
+```latex
+\listoftodos[Review notes]
+```
+
+The optional argument is supported by `todonotes` and needs no patching of
+package internals. It is also safe under the `disable` option, whose
+replacement definition accepts and discards the argument, so the same source
+line serves both builds and no stray heading appears in the clean PDF.
+
+Do not retitle the index to anything that reads as part of the manuscript,
+such as "Notes" or "Appendix". The name should make clear to anyone holding
+the annotated PDF that what follows is review apparatus, not content.
+
 ## 8. Pre-handoff checklist
 
 Before presenting a draft, confirm:
@@ -247,7 +326,14 @@ Before presenting a draft, confirm:
    figure has committed, runnable code in the repo that its note points to.
 4. All `CHECK:` notes are genuinely unresolvable by you and are worded so
    the human knows exactly what to verify.
-5. Both PDFs built: annotated and clean; the annotated build has no
-   todonotes layout warnings.
-6. Prose follows Section 2 (formal register, US spelling, Oxford comma, no
+5. The clean PDF contains no reference to the project repository: no paths,
+   no commands, no script or output-file names, and no section devoted to
+   reproduction (Section 6). Read the clean build, not the source, to
+   confirm this, and check captions, tables, and footnotes as well as the
+   body.
+6. Both PDFs built: annotated and clean; the annotated build has no
+   todonotes layout warnings, and its note index is titled "Review notes"
+   and sits after the bibliography as the last thing in the document
+   (Section 7).
+7. Prose follows Section 2 (formal register, US spelling, Oxford comma, no
    em dashes, quantified hedging only).

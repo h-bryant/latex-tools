@@ -1,0 +1,65 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{modern}[2026/05/01 Modern article style: Pagella body, Optima headings]
+
+% Requires LuaLaTeX (or XeLaTeX) for fontspec/unicode-math.
+
+\RequirePackage{fontspec}
+\RequirePackage{unicode-math}
+
+\setmainfont{TeX Gyre Pagella}[Numbers=OldStyle]
+% \setsansfont{TeX Gyre Heros}
+\setmathfont{TeX Gyre Pagella Math}
+
+% Heading font with runtime fallback. Optima ships as a system font on macOS
+% but is proprietary and not in TeX Live. URW Classico is a free,
+% metric-compatible Optima clone (CTAN package `classico`, AUR `urw-classico`;
+% on Debian, drop the .otf files into ~/.fonts and run `fc-cache -f`).
+% TeX Gyre Heros always ships with TeX Live, so the chain always resolves.
+\IfFontExistsTF{Optima}{%
+  \newfontfamily\headingfont{Optima}%
+}{\IfFontExistsTF{URW Classico}{%
+  \newfontfamily\headingfont{URW Classico}%
+}{%
+  \newfontfamily\headingfont{TeX Gyre Heros}%
+}}
+
+\RequirePackage{titlesec}  % load after fontspec/unicode-math
+\titleformat{\section}{\headingfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\headingfont\large\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\headingfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
+
+\RequirePackage{setspace}
+\setstretch{1.2}
+
+% Microtype + a small emergency stretch absorbs marginal overfulls (especially
+% in bibliographies and paragraphs dense with \texttt{} runs).
+\RequirePackage{microtype}
+\setlength{\emergencystretch}{1em}
+
+\RequirePackage[
+  top=1.15in,
+  bottom=1.15in,
+  left=1.25in,
+  right=1.25in
+]{geometry}
+
+\RequirePackage[
+  backend=biber,
+  style=authoryear,
+  natbib=true,
+  maxcitenames=2,
+  maxbibnames=99,
+  uniquelist=false
+]{biblatex}
+
+% hyperref loads last so it can patch the other packages' commands.
+% Same color scheme as classic.sty: blue cite/url links, black internal links.
+\RequirePackage{hyperref}
+\hypersetup{
+  colorlinks = {true},
+  urlcolor   = {blue},
+  linkcolor  = {black},
+  citecolor  = {blue}
+}
+
+\endinput

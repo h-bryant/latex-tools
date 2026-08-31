@@ -1,0 +1,23 @@
+# Python environment
+.venv/
+__pycache__/
+
+# Raw downloads (14 MB). Regenerate with: python data/fetch_asos.py
+data/raw/
+
+# Large intermediate output. Regenerate with the analysis scripts.
+analysis/monthly_dewpoint/output/daily_dewpoint_0700.csv
+analysis/dewpoint_forecast/output/backtest_detail.csv
+
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.tdo
+*.toc
