@@ -40,6 +40,3 @@ The global `~/.latexmkrc` already selects LuaLaTeX (`$pdf_mode = 4`) and Biber (
 
 `soothfast-writing.md` sets the standard for LLM-drafted manuscripts. "Soothfast" (Old English *sooþfæst*, "steadfast in truth") is an archaic word for that which is true and demonstrably so. The guide's core obligation: every substantive claim, number, calculation, and figure carries visible provenance, recorded in tagged `todonotes` margin annotations (`SRC:`, `DATA:`, `CALC:`, `FIG:`, `KB:`, `ASSUME:`, `CHECK:`) that appear in an annotated review PDF and vanish from the clean build. Reported calculations and figures must be reproducible from code committed to the project repository.
 
-## Related
-
-The canonical copies of the layout templates live at `~/Desktop/code3/layout-templates/`.
