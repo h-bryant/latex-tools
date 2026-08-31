@@ -1,0 +1,31 @@
+Pseudo-out-of-sample comparison of forecasting specifications.
+Expanding window, origins 2019-08 through 2026-07, horizons 1-12 months,
+4,000 simulated paths per origin. Ranked by CRPS (lower is better);
+nominal coverage 0.50 / 0.80 / 0.95. 'scale' is the record whose
+residuals shape the seasonal variance profile: the target station
+(Coulter Field) or the longer anchor record (Easterwood Field).
+
+PIT p is a chi-square test of uniformity of the probability integral
+transform on ten bins. The 930 forecast-target pairs at each
+specification overlap heavily (each target month is forecast from up to
+twelve origins, and neighbouring origins share nearly all of their
+training data), so the test's independence assumption fails badly and
+the p-value is far too small. Use it only to rank specifications
+against each other, never as a formal test.
+
+trend        K    L   scale  fit     n    CRPS    MAE   RMSE    bias  cov50  cov80  cov95   PIT p
+-------------------------------------------------------------------------------------------------
+anchored   BIC  BIC  anchor  OLS   930   1.784  2.504  3.566  -0.259  0.567  0.898  0.970  0.0000
+anchored     2  BIC  anchor  WLS   930   1.789  2.509  3.551  -0.173  0.558  0.891  0.967  0.0000
+none       BIC  BIC  anchor  OLS   930   1.796  2.520  3.582  -0.439  0.567  0.900  0.975  0.0000
+anchored     2  BIC  anchor  OLS   930   1.806  2.521  3.583  -0.168  0.568  0.875  0.967  0.0000
+anchored     1  BIC  anchor  WLS   930   1.806  2.574  3.581  -0.176  0.544  0.900  0.967  0.0000
+anchored   BIC  BIC  anchor  WLS   930   1.814  2.546  3.599  -0.189  0.545  0.899  0.967  0.0000
+anchored   BIC    1  anchor  WLS   930   1.814  2.546  3.599  -0.189  0.545  0.899  0.967  0.0000
+anchored   BIC    2  target  WLS   930   1.824  2.548  3.599  -0.212  0.529  0.888  0.975  0.0000
+anchored   BIC    3  anchor  WLS   930   1.828  2.542  3.603  -0.215  0.546  0.890  0.974  0.0000
+anchored   BIC    2  anchor  WLS   930   1.829  2.550  3.604  -0.242  0.539  0.883  0.974  0.0000
+anchored   BIC  BIC  target  WLS   930   1.833  2.567  3.616  -0.144  0.526  0.902  0.973  0.0000
+none       BIC  BIC  target  WLS   930   1.844  2.591  3.633  -0.340  0.558  0.899  0.971  0.0000
+anchored     3  BIC  anchor  WLS   930   1.856  2.589  3.730  -0.170  0.543  0.867  0.967  0.0000
+free       BIC  BIC  target  WLS   930   2.167  3.008  4.049  +1.672  0.484  0.697  0.926  0.0000

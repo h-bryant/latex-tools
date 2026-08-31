@@ -1,0 +1,25 @@
+[CFD]
+  daily 7:00 AM observations : 4,746
+  calendar span              : 2013-05-03 to 2026-08-30 (4,868 days)
+  daily coverage             : 97.494%
+  months passing >= 20 days : 158
+  monthly span               : 2013-05-01 to 2026-08-01
+  mean dew point (F)         : 58.73
+
+[CLL]
+  daily 7:00 AM observations : 11,058
+  calendar span              : 1996-01-01 to 2026-08-30 (11,200 days)
+  daily coverage             : 98.732%
+  months passing >= 20 days : 368
+  monthly span               : 1996-01-01 to 2026-08-01
+  mean dew point (F)         : 57.46
+
+[reporting resolution of the raw dew point field]
+  CFD: 113,676 readings, 29.01% reported as whole degrees F, 696 distinct values
+  CLL: 266,067 readings, 96.50% reported as whole degrees F, 345 distinct values
+
+[cross-station check, common months]
+  months compared            : 158
+  correlation of monthly means: 0.9974
+  mean difference CFD - CLL  : +0.286 F
+  max absolute difference    : 2.636 F
