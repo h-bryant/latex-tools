@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(biber template *)",
+      "Bash(echo \"exit=$?\")",
+      "Bash(lualatex -interaction=nonstopmode -halt-on-error template.tex)",
+      "Bash(echo \"final_exit=$?\")",
+      "Bash(lualatex -interaction=nonstopmode -halt-on-error modern.tex)",
+      "Bash(biber modern *)",
+      "Bash(rm -f modern.aux modern.bbl modern.bcf modern.blg modern.log modern.run.xml b1.log b2.log b3.log bb.log)",
+      "Bash(git commit -m ' *)",
+      "Read(//Users/henry/Desktop/code3/molly3/docs/**)",
+      "Bash(lualatex -interaction=nonstopmode -halt-on-error classic.tex)",
+      "Bash(echo \"exit1=$?\")",
+      "Bash(biber classic *)",
+      "Bash(echo \"final=$?\")"
+    ],
+    "additionalDirectories": [
+      "/Users/henry/Desktop/code3/layout-templates"
+    ]
+  }
+}

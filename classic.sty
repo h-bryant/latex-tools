@@ -1,0 +1,60 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{classic}[2026/05/01 Classic article style: Libertinus body, sans-serif bold headings]
+
+% Targets LuaLaTeX (libertinus auto-loads OTF + fontspec + unicode-math under lualatex/xelatex).
+
+% Math and table support
+\RequirePackage{amsmath}
+\RequirePackage{array}
+\RequirePackage{booktabs}
+\RequirePackage{blkarray}
+\RequirePackage{multirow}
+
+% Linux Libertine body + Libertinus Math, with old-style figures.
+% libertinus is in TeX Live (texlive-fonts-extra on Debian).
+\RequirePackage[osf]{libertinus}
+
+\RequirePackage{graphicx}
+\RequirePackage{color}
+
+% Microtype + a small emergency stretch absorbs marginal overfulls (especially
+% in bibliographies and paragraphs dense with \texttt{} runs).
+\RequirePackage{microtype}
+\setlength{\emergencystretch}{1em}
+
+% Bibliography: biblatex with authoryear style and natbib-compatible \citep/\citet.
+% Mirrors modern.sty so projects can swap styles without rewriting citations.
+\RequirePackage[
+  backend=biber,
+  style=authoryear,
+  natbib=true,
+  maxcitenames=2,
+  maxbibnames=99,
+  uniquelist=false
+]{biblatex}
+
+% Bold sans-serif headings via titlesec
+\RequirePackage{titlesec}
+\titleformat{\section}[hang]
+  {\bfseries\sffamily\Large}{\thesection\quad}{0ex}{}[]
+\titleformat{\subsection}[hang]
+  {\bfseries\sffamily\large}{\thesubsection\quad}{0ex}{}[]
+\titleformat{\subsubsection}[hang]
+  {\bfseries\sffamily}{\thesubsubsection\quad}{0ex}{}[]
+
+% Bold vector notation
+\renewcommand{\vec}[1]{\mathbf{#1}}
+
+% Pretty superscript ordinals: \nth{1}, \nth{2}, ...
+\RequirePackage[super]{nth}
+
+% hyperref loads last so it can patch the other packages' commands.
+\RequirePackage{hyperref}
+\hypersetup{
+  colorlinks = {true},
+  urlcolor   = {blue},
+  linkcolor  = {black},
+  citecolor  = {blue}
+}
+
+\endinput

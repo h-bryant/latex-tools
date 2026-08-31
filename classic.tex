@@ -1,0 +1,60 @@
+% !TEX program = lualatex
+\documentclass[11pt]{article}
+
+\usepackage{classic}
+\addbibresource{references.bib}
+
+\begin{document}
+
+\section{First section}
+This document uses Linux Libertine for the main text and Libertinus Math for
+math, both loaded by the \texttt{libertinus} package with the \texttt{osf}
+option (old-style figures). Headings use the default sans-serif font in bold
+via \texttt{titlesec}. The class is \texttt{article}. All of these style
+choices live in \texttt{classic.sty}.
+
+$$ \int_0^\infty e^{-x^2}\, dx = \frac{\sqrt{\pi}}{2} $$
+
+Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz
+1234567890
+
+\emph{This is emphasized text.}
+
+\section{Compiling}
+This template is built with Lua\LaTeX{} (the \texttt{libertinus} package
+auto-loads its OpenType fonts and \texttt{unicode-math} under lualatex/xelatex)
+and uses \texttt{biblatex} with the Biber backend for the bibliography. From
+the directory containing \texttt{classic.tex}, \texttt{classic.sty}, and
+\texttt{references.bib}, run:
+
+\begin{verbatim}
+lualatex classic.tex
+biber classic
+lualatex classic.tex
+lualatex classic.tex
+\end{verbatim}
+
+The first \texttt{lualatex} pass writes the citation data, \texttt{biber}
+compiles the bibliography, and the final two \texttt{lualatex} passes resolve
+cross-references. The equivalent one-liner with \texttt{latexmk} is:
+
+\begin{verbatim}
+latexmk -lualatex classic.tex
+\end{verbatim}
+
+\section{Body example}
+Modern empirical industrial organization emphasizes the structural modeling of
+markets \citep{ackerberg2007econometric}. The aim is to closely represent the
+primitive factors and the strategic conduct of agents---on both demand and
+production sides---that ultimately determine market outcomes. The structural
+approach is often contrasted with reduced-form methods, which are more agnostic
+about the underlying economic model and focus on estimating relationships
+between observed variables \citep{angrist2010credibility}. Structural models can
+be used to conduct counterfactual analysis and to predict the effects of policy
+changes, while reduced-form models are typically more focused on identifying
+causal relationships in the data. \citet{nevo2001measuring} provides a canonical
+example of the structural approach in the ready-to-eat cereal industry.
+
+\printbibliography
+
+\end{document}
