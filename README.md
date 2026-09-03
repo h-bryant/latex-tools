@@ -13,6 +13,7 @@ Everything targets **LuaLaTeX** with **biblatex + Biber**. Do not build with pdf
 | `classic.tex`, `modern.tex` | Driver documents exercising each style (headings, math, tables, citations). Compiled output in `classic.pdf` and `modern.pdf`. |
 | `references.bib` | Shared bibliography used by the driver documents. |
 | `soothfast-writing.md` | Guide governing how an LLM drafts academic documents in LaTeX (see below). |
+| `learn-about.md` | Guide governing how an LLM produces a subject briefing in HTML (hover definitions) and PDF (end glossary with marked terms) from one glossary and one bibliography (see below). |
 | `soothfast_example/` | Placeholder for a worked example following the guide. |
 
 Both styles load the same bibliography setup (`biblatex`, `backend=biber`, `style=authoryear`, `natbib=true`, `maxcitenames=2`, `maxbibnames=99`) and the same `hyperref` colors (blue cite/URL links, black internal links), so a project can swap between them without rewriting citations.
@@ -40,3 +41,6 @@ The global `~/.latexmkrc` already selects LuaLaTeX (`$pdf_mode = 4`) and Biber (
 
 `soothfast-writing.md` sets the standard for LLM-drafted manuscripts. "Soothfast" (Old English *sooþfæst*, "steadfast in truth") is an archaic word for that which is true and demonstrably so. The guide's core obligation: every substantive claim, number, calculation, and figure carries visible provenance, recorded in tagged `todonotes` margin annotations (`SRC:`, `DATA:`, `CALC:`, `FIG:`, `KB:`, `ASSUME:`, `CHECK:`) that appear in an annotated review PDF and vanish from the clean build. Reported calculations and figures must be reproducible from code committed to the project repository.
 
+## Learn-about briefings
+
+`learn-about.md` sets the standard for LLM-produced subject briefings: self-contained learning documents on one topic, delivered as an HTML file and a PDF built from the same content. The HTML carries hover definitions on every marked technical term, a sticky section navigator, inline SVG figures, and verified external links. The PDF (LuaLaTeX, `modern.sty`, `glossaries-extra`) marks the same terms with a dotted underline linked to a glossary that closes the document, with page back-references. Definitions live once in `glossary.json`; a small generator described in the guide writes the LaTeX entries, injects the JSON into the HTML, and checks that both formats mark the same terms.
