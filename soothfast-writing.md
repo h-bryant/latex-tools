@@ -17,7 +17,7 @@ either find out, flag it explicitly as unverified, or do not write it.
 
 - **Engine: LuaLaTeX, always.** Never pdflatex or XeLaTeX. The templates
   require `fontspec`/`unicode-math`, which LuaLaTeX handles natively.
-- **Style file: `modern.sty`** from this repo (`latex-tools`). Copy it
+- **Style file: `modern.sty`** from this repo (`tools`). Copy it
   into the project directory alongside the `.tex` file. It provides the fonts
   (TeX Gyre Pagella body and math, Optima-family headings), 1.2 line stretch,
   geometry, `microtype`, `biblatex`, and `hyperref`. Do not re-load or

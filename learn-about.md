@@ -51,7 +51,7 @@ Otherwise make routine judgment calls yourself and state them in the README.
   <slug>.html            # the HTML briefing, self-contained
   <slug>.tex             # the LaTeX source
   <slug>.pdf             # the built PDF
-  modern.sty             # copied from the latex-tools repo, unmodified
+  modern.sty             # copied from the tools repo, unmodified
   references.bib         # every cited work; single source for both formats
   glossary.json          # every defined term; single source for both formats
   glossary.tex           # generated from glossary.json, never edited by hand
@@ -689,7 +689,7 @@ scroll at a 375 px width.
 
 - **Engine: LuaLaTeX, always.** Never pdflatex or XeLaTeX; `modern.sty` needs
   `fontspec`/`unicode-math`.
-- **Style: `modern.sty`** from the latex-tools repo, copied unmodified into
+- **Style: `modern.sty`** from the tools repo, copied unmodified into
   the project directory. It supplies fonts, geometry, `microtype`, `biblatex`
   (Biber backend, `authoryear`, `natbib=true`), and `hyperref`.
 - **Glossary: `glossaries-extra`** with `\makenoidxglossaries`, so no external
@@ -708,7 +708,7 @@ Every command below has been compiled together; keep the load order.
 % !TEX program = lualatex
 \documentclass[11pt, letterpaper]{article}
 
-\usepackage{modern}                 % fonts, geometry, biblatex, hyperref (latex-tools)
+\usepackage{modern}                 % fonts, geometry, biblatex, hyperref (tools)
 \usepackage{xcolor}
 \usepackage{booktabs}
 \usepackage{graphicx}
