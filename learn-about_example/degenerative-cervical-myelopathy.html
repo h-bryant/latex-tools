@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Degenerative cervical myelopathy</title>
+<meta name="description" content="How age-related narrowing of the neck&#x27;s spinal canal slowly injures the spinal cord, who it affects, how it is recognized and treated, and where the evidence is thin. For a scientifically literate reader new to the field.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&amp;family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
+<style>
+  :root {
+    --bg: #FBF9F6; --surface: #FFFFFF; --ink: #21282A; --ink-2: #4E5A58; --muted: #7C8683;
+    --accent: #0E6E6E; --accent-ink: #0B5757; --coral: #A8433B;
+    --line: #E4DFD6; --line-soft: #EEEAE2; --note-bg: #EDF3F0; --flag-bg: #F8ECE7;
+    --mark: #00876F; --mark-track: #D2E6DF; --tip-bg: #24302E; --tip-ink: #F4F1EA;
+    --code-bg: #F1EDE5; --shadow: 0 10px 30px rgba(33,40,42,.12);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #14181A; --surface: #1B2124; --ink: #E5E2DA; --ink-2: #ABB4B0; --muted: #7C8683;
+      --accent: #4FB3AC; --accent-ink: #6BC4BD; --coral: #E08078;
+      --line: #2B3336; --line-soft: #232B2E; --note-bg: #1B2624; --flag-bg: #291F1D;
+      --mark: #2AA093; --mark-track: #24413D; --tip-bg: #E5E2DA; --tip-ink: #1B2124;
+      --code-bg: #222A2D; --shadow: 0 10px 30px rgba(0,0,0,.45);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #14181A; --surface: #1B2124; --ink: #E5E2DA; --ink-2: #ABB4B0; --muted: #7C8683;
+    --accent: #4FB3AC; --accent-ink: #6BC4BD; --coral: #E08078;
+    --line: #2B3336; --line-soft: #232B2E; --note-bg: #1B2624; --flag-bg: #291F1D;
+    --mark: #2AA093; --mark-track: #24413D; --tip-bg: #E5E2DA; --tip-ink: #1B2124;
+    --code-bg: #222A2D; --shadow: 0 10px 30px rgba(0,0,0,.45);
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 4.5rem; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { background: var(--bg); color: var(--ink); font-family: "Source Sans 3", "Segoe UI", system-ui, sans-serif; font-size: 17px; line-height: 1.65; margin: 0; }
+  h1, h2, h3 { font-family: "Source Serif 4", Georgia, "Times New Roman", serif; line-height: 1.2; text-wrap: balance; color: var(--ink); }
+  h1 { font-size: clamp(2.1rem, 5.5vw, 3.1rem); font-weight: 700; margin: .35em 0 .3em; }
+  h2 { font-size: 1.65rem; font-weight: 700; margin: 0 0 .6em; }
+  h3 { font-size: 1.18rem; font-weight: 600; margin: 2em 0 .5em; }
+  p { margin: 0 0 1em; }
+  a { color: var(--accent-ink); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:hover { text-decoration-thickness: 2px; }
+  a:focus-visible, .t:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+  a.ext::after { content: "\2197"; font-size: .72em; margin-left: .18em; vertical-align: super; text-decoration: none; display: inline-block; }
+  ul, ol { padding-left: 1.35em; margin: 0 0 1em; }
+  li { margin-bottom: .45em; }
+  strong { font-weight: 600; }
+  code { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: .88em; background: var(--code-bg); padding: .05em .3em; border-radius: 4px; }
+  .wrap { max-width: 46rem; margin: 0 auto; padding: 0 1.25rem; }
+  .wide { max-width: 60rem; }
+
+  /* masthead */
+  header.masthead { padding: 3.5rem 0 2rem; border-bottom: 1px solid var(--line); }
+  .eyebrow { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; color: var(--accent-ink); margin: 0 0 .4rem; }
+  .dek { font-size: 1.15rem; color: var(--ink-2); max-width: 40rem; margin-bottom: 1.2rem; }
+  .meta { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: .74rem; color: var(--muted); display: flex; flex-wrap: wrap; gap: .4rem 1.4rem; }
+
+  /* sticky navigator */
+  nav.toc { position: sticky; top: 0; z-index: 40; background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+  nav.toc .row { display: flex; gap: .25rem; overflow-x: auto; padding: 0 1rem; max-width: 60rem; margin: 0 auto; scrollbar-width: none; }
+  nav.toc .row::-webkit-scrollbar { display: none; }
+  nav.toc a { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; color: var(--ink-2); text-decoration: none; white-space: nowrap; padding: .8rem .6rem calc(.8rem - 2px); border-bottom: 2px solid transparent; }
+  nav.toc a:hover { color: var(--accent-ink); }
+  nav.toc a.on { color: var(--accent-ink); border-bottom-color: var(--accent); }
+
+  /* sections */
+  section.block { padding: 3rem 0 1.5rem; border-bottom: 1px solid var(--line); }
+  section.block:last-of-type { border-bottom: none; }
+  .sec-eyebrow { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: .7rem; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); margin-bottom: .35rem; }
+
+  /* glossary terms and tooltip */
+  .t { cursor: help; text-decoration: underline dotted; text-decoration-color: var(--accent); text-decoration-thickness: 1.5px; text-underline-offset: 3px; }
+  #tip { position: fixed; z-index: 100; max-width: 21rem; background: var(--tip-bg); color: var(--tip-ink); border-radius: 8px; padding: .65rem .85rem; font-size: .84rem; line-height: 1.5; box-shadow: var(--shadow); pointer-events: none; }
+  #tip b { display: block; font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: .7rem; letter-spacing: .08em; text-transform: uppercase; margin-bottom: .25rem; opacity: .75; }
+
+  /* callouts */
+  .note, .flag { border-radius: 10px; padding: 1rem 1.2rem; margin: 1.4rem 0; font-size: .95rem; }
+  .note { background: var(--note-bg); border-left: 3px solid var(--accent); }
+  .flag { background: var(--flag-bg); border-left: 3px solid var(--coral); }
+  .note .lab, .flag .lab { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: .68rem; letter-spacing: .14em; text-transform: uppercase; display: block; margin-bottom: .35rem; }
+  .note .lab { color: var(--accent-ink); }
+  .flag .lab { color: var(--coral); }
+  .note p:last-child, .flag p:last-child, .note ul:last-child { margin-bottom: 0; }
+
+  /* tables */
+  .tablewrap { overflow-x: auto; margin: 1.5rem 0; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
+  table { border-collapse: collapse; width: 100%; font-size: .92rem; line-height: 1.5; }
+  th { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-2); text-align: left; font-weight: 500; padding: .8rem .9rem; border-bottom: 1px solid var(--line); background: var(--line-soft); }
+  td { padding: .75rem .9rem; border-bottom: 1px solid var(--line-soft); vertical-align: top; }
+  tr:last-child td { border-bottom: none; }
+  td .sub { color: var(--muted); font-size: .85rem; display: block; }
+  .num { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: .84rem; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .tablenote { font-size: .85rem; color: var(--ink-2); margin: -.9rem 0 1.5rem; line-height: 1.55; }
+  /* range meter: div.rng containing an i element positioned with inline left and width percentages */
+  .rng { position: relative; width: 7.5rem; height: 8px; border-radius: 4px; background: var(--mark-track); margin-top: .45rem; }
+  .rng i { position: absolute; top: 0; height: 8px; border-radius: 4px; background: var(--mark); }
+  /* magnitude bar: div.bar containing an i element with an inline width percentage */
+  .bar { position: relative; width: 9rem; max-width: 100%; height: 10px; border-radius: 0 4px 4px 0; background: var(--mark-track); margin-top: .4rem; overflow: hidden; }
+  .bar i { position: absolute; left: 0; top: 0; height: 10px; border-radius: 0 4px 4px 0; background: var(--mark); }
+
+  /* figures */
+  figure { margin: 1.8rem 0; padding: 1.3rem 1.3rem 1rem; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
+  figure svg { max-width: 100%; height: auto; display: block; margin: 0 auto; color: var(--ink); }
+  figcaption { font-size: .85rem; color: var(--ink-2); margin-top: .9rem; line-height: 1.55; }
+  figcaption b { color: var(--ink); }
+
+  /* optional depth: a details element with a summary and a div.body */
+  details { border: 1px solid var(--line); border-radius: 8px; margin: .6rem 0; background: var(--surface); }
+  summary { cursor: pointer; padding: .7rem 1rem; font-weight: 600; font-size: .97rem; list-style: none; display: flex; align-items: baseline; gap: .6rem; }
+  summary::before { content: "+"; font-family: "IBM Plex Mono", monospace; color: var(--accent-ink); }
+  details[open] summary::before { content: "\2212"; }
+  details .body { padding: 0 1rem .9rem; font-size: .95rem; color: var(--ink-2); }
+
+  /* card grid for parallel lists */
+  .cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr)); gap: 1.2rem; margin: 1.3rem 0; }
+  .col-card { border: 1px solid var(--line); border-radius: 10px; background: var(--surface); padding: 1.1rem 1.2rem; }
+  .col-card h4 { margin: 0 0 .6rem; font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: .7rem; letter-spacing: .14em; text-transform: uppercase; color: var(--accent-ink); font-weight: 500; }
+  .col-card ul { margin: 0; padding-left: 1.15em; font-size: .93rem; }
+
+  /* sources */
+  .refs { font-size: .9rem; }
+  .refs li { margin-bottom: .7em; }
+  .refs .j { color: var(--muted); font-style: italic; }
+  footer.foot { padding: 2.5rem 0 3.5rem; color: var(--muted); font-size: .85rem; border-top: 1px solid var(--line); margin-top: 2rem; }
+
+  /* additions for this briefing */
+  .figno { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: .68rem; letter-spacing: .12em; text-transform: uppercase; color: var(--accent-ink); margin-right: .3em; }
+  sup.fnref a { text-decoration: none; font-size: .8em; padding-left: .1em; }
+  .footnotes { font-size: .85rem; color: var(--ink-2); padding-left: 1.2em; margin: 1.5rem 0 0; }
+  .footnotes li { margin-bottom: .4em; }
+  .footnotes a.back { text-decoration: none; margin-left: .3em; }
+  td.r { text-align: right; }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <p class="eyebrow">Subject briefing</p>
+    <h1>Degenerative cervical myelopathy</h1>
+    <p class="dek">How age-related narrowing of the neck's spinal canal slowly injures the spinal cord, who it affects, how it is recognized and treated, and where the evidence is thin. For a scientifically literate reader new to the field.<sup class="fnref"><a href="#fn-prompt" id="fnref-prompt" aria-label="Footnote 1">1</a></sup></p>
+    <p class="meta">
+      <span>Compiled September 2026</span>
+      <span>Dotted terms: hover, tap, or focus for definitions</span>
+      <span>Educational briefing, not medical advice</span>
+    </p>
+  </div>
+</header>
+
+<nav class="toc" aria-label="Sections">
+  <div class="row">
+    <a href="#overview">Overview</a>
+    <a href="#mechanism">Mechanism</a>
+    <a href="#epidemiology">Who</a>
+    <a href="#presentation">Symptoms</a>
+    <a href="#naturalhistory">Course</a>
+    <a href="#diagnosis">Diagnosis</a>
+    <a href="#treatment">Treatment</a>
+    <a href="#prognosis">Prognosis</a>
+    <a href="#debates">Outlook</a>
+    <a href="#sources">Sources</a>
+  </div>
+</nav>
+
+<main>
+
+<section class="block" id="overview">
+  <div class="wrap">
+    <p class="sec-eyebrow">Overview</p>
+    <h2>A slow spinal cord injury caused by a wearing neck</h2>
+<div class="note"><span class="lab">In brief</span><ul><li>Degenerative cervical myelopathy (DCM) is a slow <span class="t" data-g="sci">spinal cord injury</span>: age-related narrowing of the spinal canal in the neck compresses the cord, and it is the commonest cause of spinal cord dysfunction in adults (<a class="ext" href="https://doi.org/10.1038/s41582-019-0303-0">Badhiwala et al., 2020</a>; <a class="ext" href="https://doi.org/10.1097/BRS.0000000000000913">Nouri et al., 2015</a>).</li><li>About a quarter of healthy adults, and a third of those aged 60 and over, have <span class="t" data-g="cordcompression">cord compression</span> on MRI. Most have no symptoms, but roughly 2% of adults meet clinical criteria for DCM, about ten times the share recorded in hospital data (<a class="ext" href="https://doi.org/10.1177/2192568220934496">Smith et al., 2021</a>; <a class="ext" href="https://doi.org/10.1007/s00415-022-11349-8">Grodzinski et al., 2023</a>).</li><li>The early picture is numb, clumsy hands and an unsteady walk. It is routinely mistaken for <span class="t" data-g="carpaltunnel">carpal tunnel syndrome</span> or for aging, and diagnosis takes about 2 years and 5 physician visits on average (<a class="ext" href="https://doi.org/10.3171/2013.3.FOCUS1374">Behrbalk et al., 2013</a>).</li><li>Left alone, 20 to 62% of patients with symptoms deteriorate within 3 to 6 years, and damage that has accumulated is largely permanent (<a class="ext" href="https://doi.org/10.1177/2192568217701914">Fehlings et al., 2017b</a>).</li><li>Decompressive surgery is recommended for moderate and severe disease and for mild disease that worsens. It improves function by about 2 to 3 points on the 18-point <span class="t" data-g="mjoa">mJOA</span> scale on average, but few patients recover fully (<a class="ext" href="https://doi.org/10.1177/2192568217701914">Fehlings et al., 2017b</a>; <a class="ext" href="https://doi.org/10.1097/BRS.0000000000000988">Fehlings et al., 2015</a>).</li><li>Operating from the front or the back of the neck gives similar functional results with different complications; overall complication rates are 14 to 19%, and most complications are temporary (<a class="ext" href="https://doi.org/10.1001/jama.2021.1233">Ghogawala et al., 2021</a>; <a class="ext" href="https://doi.org/10.3171/2012.1.SPINE11467">Fehlings et al., 2012</a>).</li><li>No drug has yet been shown to protect the cord. The frontiers are earlier diagnosis, <span class="t" data-g="qmri">quantitative MRI</span>, and add-on <span class="t" data-g="neuroprotection">neuroprotective</span> drugs tested alongside surgery (<a class="ext" href="https://doi.org/10.1016/S1474-4422(20)30407-5">Fehlings et al., 2021</a>; <a class="ext" href="https://doi.org/10.1038/s41582-019-0303-0">Badhiwala et al., 2020</a>).</li></ul></div>
+<p>Degenerative cervical myelopathy is what happens when the ordinary wear of the neck's spine, called <span class="t" data-g="spondylosis">spondylosis</span>, narrows the <span class="t" data-g="spinalcanal">spinal canal</span> enough to injure the spinal cord inside it. The name says where and why: <em>cervical</em> is the neck, <em><span class="t" data-g="myelopathy">myelopathy</span></em> is disease of the spinal cord itself, and <em>degenerative</em> distinguishes it from cord injury by trauma, tumor, infection, or inflammation. An international consensus led by AO Spine and the charity Myelopathy.org settled in 2022 on a one-line definition, “a progressive spinal cord injury caused by narrowing of the cervical spinal canal,” after finding the disease had been going by more than 11 different names (<a class="ext" href="https://doi.org/10.1177/21925682221111780">Davies et al., 2024a</a>).</p>
+<p>The umbrella term was proposed in 2015 to gather several conditions that had been studied separately (<a class="ext" href="https://doi.org/10.1097/BRS.0000000000000913">Nouri et al., 2015</a>). The largest is <span class="t" data-g="csm">cervical spondylotic myelopathy</span>, in which bulging discs, <span class="t" data-g="osteophyte">bony spurs</span>, and thickened ligaments do the compressing. A second is <span class="t" data-g="opll">ossification of the posterior longitudinal ligament</span>, in which a ligament along the front wall of the canal turns to bone; it is far more common in East Asia. A third contributor is a canal that was narrow from birth, which leaves less room for any later degeneration (<a class="ext" href="https://doi.org/10.1097/BRS.0000000000000913">Nouri et al., 2015</a>; <a class="ext" href="https://doi.org/10.1007/s00586-012-2437-2">Bajwa et al., 2012</a>).</p>
+<p>The condition matters for three reasons. It is the leading cause of spinal cord dysfunction in adults worldwide, and its frequency is rising as populations age (<a class="ext" href="https://doi.org/10.1038/s41582-019-0303-0">Badhiwala et al., 2020</a>). It is treatable: surgery reliably halts progression and usually brings some recovery, so the disability it causes is in large part avoidable (<a class="ext" href="https://doi.org/10.1177/2192568217701914">Fehlings et al., 2017b</a>). And it is badly under-recognized. Modeling against UK hospital records suggests that most cases, particularly in the elderly, are never diagnosed, and the patients who are diagnosed have typically waited more than 2 years (<a class="ext" href="https://doi.org/10.1007/s00415-022-11349-8">Grodzinski et al., 2023</a>; <a class="ext" href="https://doi.org/10.3171/2013.3.FOCUS1374">Behrbalk et al., 2013</a>).</p>
+<div class="note"><span class="lab">Two sentences to remember</span><p>Degenerative cervical myelopathy is a slow spinal cord injury caused by age-related narrowing of the canal in the neck; it produces numb, clumsy hands, an unsteady gait, and bladder urgency, and it progresses in steps. Surgery to make room for the cord is the only treatment shown to stop the decline, so the whole game is recognizing it early.</p></div>
+  </div>
+</section>
+<section class="block" id="mechanism">
+  <div class="wrap">
+    <p class="sec-eyebrow">Mechanism</p>
+    <h2>How a narrowed canal injures the cord</h2>
+<p>The cervical spinal cord runs through a bony tunnel formed by seven stacked vertebrae. In front of the cord lie the vertebral bodies and the <span class="t" data-g="intervertebraldisc">intervertebral discs</span> between them; behind it lie the bony arches (laminae) lined by the elastic <span class="t" data-g="ligamentumflavum">ligamentum flavum</span>; to each side sit the facet joints. In a healthy adult the cord floats in a cuff of cerebrospinal fluid with room to spare. Degeneration takes that room away from both directions at once (Figure 1).</p>
+<figure>
+<svg viewBox="0 0 740 280" role="img" aria-label="Two axial schematics of the cervical spine. Left, a normal canal: the spinal cord floats in cerebrospinal fluid between the vertebral body in front and the lamina and thin ligamentum flavum behind. Right, degenerative narrowing: a disc bulge with osteophyte protrudes from the front and a thickened ligamentum flavum from behind, flattening the cord, which shows a T2 signal change.">
+
+<text x="120" y="20" font-size="14" text-anchor="middle" fill="currentColor" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif" font-weight="600"><tspan x="120" dy="0">Normal canal</tspan></text>
+<text x="120" y="38" font-size="10.5" text-anchor="middle" fill="var(--muted)" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif"><tspan x="120" dy="0">front</tspan></text>
+<text x="120" y="266" font-size="10.5" text-anchor="middle" fill="var(--muted)" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif"><tspan x="120" dy="0">back</tspan></text>
+<rect x="45" y="48" width="150" height="52" rx="12" fill="currentColor" stroke="var(--ink-2)" stroke-width="1" fill-opacity="0.12"/>
+<text x="120" y="79" font-size="12" text-anchor="middle" fill="var(--ink-2)" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif"><tspan x="120" dy="0">Vertebral body</tspan></text>
+<rect x="2" y="140" width="24" height="36" rx="5" fill="currentColor" stroke="var(--ink-2)" stroke-width="1" fill-opacity="0.12"/>
+<rect x="214" y="140" width="24" height="36" rx="5" fill="currentColor" stroke="var(--ink-2)" stroke-width="1" fill-opacity="0.12"/>
+<path d="M 50 104 Q 32 150 40 182.5 Q 48 215 84 227.5 Q 120 240 156 227.5 Q 192 215 200 182.5 Q 208 150 199 127 L 190 104" fill="none" stroke="currentColor" stroke-width="11" opacity="0.5"/>
+<path d="M 60 120 Q 46 155 53 180 Q 60 205 90 214.5 Q 120 224 150 214.5 Q 180 205 187 180 Q 194 155 187 137.5 L 180 120" fill="none" stroke="var(--coral)" stroke-width="3" opacity="0.7"/>
+<ellipse cx="120" cy="165" rx="56" ry="46" fill="var(--accent)" stroke="none" fill-opacity="0.15"/>
+<ellipse cx="120" cy="165" rx="36" ry="28" fill="var(--mark)" stroke="none"/>
+<line x1="150" y1="158" x2="242" y2="147" stroke="var(--ink-2)" stroke-width="0.8" opacity="0.8" stroke-linecap="round"/>
+<text x="246" y="150" font-size="11" text-anchor="start" fill="var(--ink-2)" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif"><tspan x="246" dy="0">Spinal cord</tspan></text>
+<line x1="172" y1="178" x2="242" y2="179" stroke="var(--ink-2)" stroke-width="0.8" opacity="0.8" stroke-linecap="round"/>
+<text x="246" y="182" font-size="11" text-anchor="start" fill="var(--ink-2)" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif"><tspan x="246" dy="0">Cerebrospinal fluid</tspan></text>
+<line x1="182" y1="204" x2="242" y2="211" stroke="var(--ink-2)" stroke-width="0.8" opacity="0.8" stroke-linecap="round"/>
+<text x="246" y="214" font-size="11" text-anchor="start" fill="var(--ink-2)" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif"><tspan x="246" dy="0">Ligamentum flavum</tspan></text>
+<line x1="162" y1="233" x2="242" y2="247" stroke="var(--ink-2)" stroke-width="0.8" opacity="0.8" stroke-linecap="round"/>
+<text x="246" y="250" font-size="11" text-anchor="start" fill="var(--ink-2)" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif"><tspan x="246" dy="0">Lamina (bone)</tspan></text>
+<text x="2" y="192" font-size="10.5" text-anchor="start" fill="var(--ink-2)" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif"><tspan x="2" dy="0">Facet joint</tspan></text>
+<text x="495" y="20" font-size="14" text-anchor="middle" fill="currentColor" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif" font-weight="600"><tspan x="495" dy="0">Degenerative narrowing</tspan></text>
+<text x="495" y="38" font-size="10.5" text-anchor="middle" fill="var(--muted)" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif"><tspan x="495" dy="0">front</tspan></text>
+<text x="495" y="266" font-size="10.5" text-anchor="middle" fill="var(--muted)" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif"><tspan x="495" dy="0">back</tspan></text>
+<rect x="420" y="48" width="150" height="52" rx="12" fill="currentColor" stroke="var(--ink-2)" stroke-width="1" fill-opacity="0.12"/>
+<text x="495" y="79" font-size="12" text-anchor="middle" fill="var(--ink-2)" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif"><tspan x="495" dy="0">Vertebral body</tspan></text>
+<rect x="377" y="140" width="24" height="36" rx="5" fill="currentColor" stroke="var(--ink-2)" stroke-width="1" fill-opacity="0.12"/>
+<rect x="589" y="140" width="24" height="36" rx="5" fill="currentColor" stroke="var(--ink-2)" stroke-width="1" fill-opacity="0.12"/>
+<path d="M 425 104 Q 407 150 415 182.5 Q 423 215 459 227.5 Q 495 240 531 227.5 Q 567 215 575 182.5 Q 583 150 574 127 L 565 104" fill="none" stroke="currentColor" stroke-width="11" opacity="0.5"/>
+<path d="M 435 120 Q 421 155 428 180 Q 435 205 465 214.5 Q 495 224 525 214.5 Q 555 205 562 180 Q 569 155 562 137.5 L 555 120" fill="none" stroke="var(--coral)" stroke-width="10" opacity="0.85"/>
+<path d="M 495 100 Q 437 100 449 112 Q 461 124 478 128.5 Q 495 133 512 128.5 Q 529 124 541 112 Q 553 100 495 100 Z" fill="var(--coral)" stroke="none" fill-opacity="0.85"/>
+<ellipse cx="495" cy="170" rx="52" ry="30" fill="var(--accent)" stroke="none" fill-opacity="0.15"/>
+<ellipse cx="495" cy="172" rx="42" ry="15" fill="var(--mark)" stroke="none"/>
+<ellipse cx="501" cy="172" rx="8" ry="5" fill="var(--surface)" stroke="var(--ink-2)" stroke-width="0.8"/>
+<line x1="535" y1="118" x2="617" y2="111" stroke="var(--ink-2)" stroke-width="0.8" opacity="0.8" stroke-linecap="round"/>
+<text x="621" y="114" font-size="11" text-anchor="start" fill="var(--ink-2)" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif"><tspan x="621" dy="0">Disc bulge and</tspan><tspan x="621" dy="13.75">osteophyte</tspan></text>
+<line x1="531" y1="168" x2="617" y2="157" stroke="var(--ink-2)" stroke-width="0.8" opacity="0.8" stroke-linecap="round"/>
+<text x="621" y="160" font-size="11" text-anchor="start" fill="var(--ink-2)" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif"><tspan x="621" dy="0">Flattened cord</tspan></text>
+<line x1="509" y1="174" x2="617" y2="185" stroke="var(--ink-2)" stroke-width="0.8" opacity="0.8" stroke-linecap="round"/>
+<text x="621" y="188" font-size="11" text-anchor="start" fill="var(--ink-2)" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif"><tspan x="621" dy="0">T2 signal change</tspan></text>
+<line x1="561" y1="206" x2="617" y2="211" stroke="var(--ink-2)" stroke-width="0.8" opacity="0.8" stroke-linecap="round"/>
+<text x="621" y="214" font-size="11" text-anchor="start" fill="var(--ink-2)" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif"><tspan x="621" dy="0">Thickened</tspan><tspan x="621" dy="13.75">ligamentum flavum</tspan></text>
+<line x1="537" y1="233" x2="617" y2="247" stroke="var(--ink-2)" stroke-width="0.8" opacity="0.8" stroke-linecap="round"/>
+<text x="621" y="250" font-size="11" text-anchor="start" fill="var(--ink-2)" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif"><tspan x="621" dy="0">Lamina</tspan></text>
+<text x="377" y="192" font-size="10.5" text-anchor="start" fill="var(--ink-2)" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif"><tspan x="377" dy="0">Facet joint</tspan></text>
+</svg>
+<figcaption><span class="figno">Figure 1.</span> <b>A canal that narrows from both front and back.</b> Left, a normal canal: the cord floats in cerebrospinal fluid. Right, degenerative narrowing: a disc bulge with bony spur in front and a thickened ligamentum flavum behind flatten the cord; the pale spot marks a T2 signal change on MRI. Schematic, not to scale.</figcaption>
+</figure>
+<h3>Static compression: discs, spurs, ligaments, and a narrow canal to begin with</h3>
+<p>The sequence usually starts in the disc. With age the disc loses water and height and bulges backward toward the canal. The vertebrae above and below respond by growing <span class="t" data-g="osteophyte">osteophytes</span>, bony spurs along the disc margins; together the bulging disc and its spurs form a disc-osteophyte complex that indents the front of the cord. Loss of disc height also slackens the ligamentum flavum behind the cord, which thickens and buckles inward, while the facet joints enlarge with arthritis. Reviews of the pathogenesis describe the result as static compression from the front and the back at the same level (<a class="ext" href="https://doi.org/10.1097/BRS.0b013e3182a7f2c3">Karadimas et al., 2013</a>; <a class="ext" href="https://doi.org/10.1097/BRS.0000000000000913">Nouri et al., 2015</a>).</p>
+<p>Two variants change the arithmetic. In <span class="t" data-g="opll">OPLL</span>, the ligament that runs down the back of the vertebral bodies calcifies into a bar of bone that can span several levels; radiographic surveys in Japan find it in 1.9 to 4.3% of adults over 30, and genetics play a strong part (<a class="ext" href="https://doi.org/10.1097/BRS.0b013e318241ad33">Matsunaga and Sakou, 2012</a>). Congenital <span class="t" data-g="stenosis">cervical stenosis</span> is the other. In a study of 1,066 adult skeletons, a canal narrower than 13 mm from front to back fell more than 2 standard deviations below the mean, and this is the usual threshold for calling a canal congenitally narrow (<a class="ext" href="https://doi.org/10.1007/s00586-012-2437-2">Bajwa et al., 2012</a>). A related radiographic index, the <span class="t" data-g="torgpavlov">Torg–Pavlov ratio</span>, flags the same thing. In the AO Spine surgical cohorts, about 8% of patients had a cord that filled 70% or more of the canal, and they presented 5 years younger than the rest (<a class="ext" href="https://doi.org/10.1177/21925682211036071">Nouri et al., 2022</a>).</p>
+<h3>Dynamic injury: the neck moves</h3>
+<p>The cord is not compressed in one fixed position. When the neck flexes, the cord lengthens and is stretched over the spurs in front of it; when the neck extends, the ligamentum flavum buckles inward and the canal shortens and narrows. Each movement adds a pinch or a stretch to a cord that already has no slack, and thousands of repetitions a day amount to a chronic, repetitive injury. Reviews of the pathophysiology treat this dynamic component, together with the altered tension and blood supply that come from a poorly aligned spine, as central to why compression that looks modest on a still image can injure the cord (<a class="ext" href="https://doi.org/10.1097/BRS.0b013e3182a7f2c3">Karadimas et al., 2013</a>; <a class="ext" href="https://doi.org/10.1097/BRS.0000000000000913">Nouri et al., 2015</a>).</p>
+<h3>What happens inside the cord</h3>
+<p>Compression injures the cord mainly by starving it. The small arteries that feed the cord's core are pinched, producing chronic <span class="t" data-g="ischemia">ischemia</span>, and tissue from patients and animal models shows the molecular signature of oxygen shortage. The <span class="t" data-g="bscb">blood–spinal cord barrier</span> becomes leaky, letting inflammatory cells and proteins into the tissue, and activated immune cells release inflammatory signals. <span class="t" data-g="oligodendrocyte">Oligodendrocytes</span>, the cells that maintain the insulating myelin on nerve fibers, die by programmed cell death, and the long motor and sensory tracts in the <span class="t" data-g="whitematter">white matter</span> <span class="t" data-g="demyelination">lose their myelin</span> and then their axons. In the <span class="t" data-g="graymatter">gray matter</span>, the motor neurons of the front horns at the compressed level are lost (<a class="ext" href="https://doi.org/10.3389/fnins.2020.00138">Akter et al., 2020</a>; <a class="ext" href="https://doi.org/10.1093/brain/awr054">Yu et al., 2011</a>). The cascade differs from that of an acute traumatic cord injury in both its nature and its time course, which is one reason drugs developed for trauma cannot simply be transplanted to DCM (<a class="ext" href="https://doi.org/10.1097/BRS.0b013e3182a7f2c3">Karadimas et al., 2013</a>).</p>
+<p>This anatomy explains the symptoms. Damage to the <span class="t" data-g="corticospinaltract">corticospinal tract</span> below the compression produces weak, <span class="t" data-g="spasticity">stiff</span> legs with brisk reflexes. Damage to the <span class="t" data-g="dorsalcolumns">dorsal columns</span> takes away fine touch and position sense, so the hands become clumsy and the gait unsteady, especially in the dark. Loss of gray matter at the level of compression wastes and weakens the hand muscles, and interruption of the pathways to the bladder produces urgency (<a class="ext" href="https://doi.org/10.3389/fnins.2020.00138">Akter et al., 2020</a>; <a class="ext" href="https://doi.org/10.1177/21925682211072847">Tetreault et al., 2022</a>).</p>
+<div class="note"><span class="lab">Why the picture and the patient disagree</span><p>The degree of compression on an <span class="t" data-g="mri">MRI</span> correlates poorly with how ill the patient is, and mild-looking compression can cause severe disease (<a class="ext" href="https://doi.org/10.1136/bmj.k186">Davies et al., 2018</a>). Canal size varies between people, the dynamic component is invisible on a still image, and the cord adapts to slow change. The corollary for diagnosis is that the scan must be read alongside the examination, not instead of it.</p></div>
+<h3>Why recovery after decompression is incomplete</h3>
+<p>Decompression stops the injury but does not undo it. Animal work shows that suddenly restoring blood flow to a chronically starved cord produces its own <span class="t" data-g="reperfusioninjury">ischemia-reperfusion injury</span>, which the drug <span class="t" data-g="riluzole">riluzole</span> blocked in rats, and the same report cites surgical cohort data in which 9.3% of patients declined functionally after decompression and 44% remained substantially impaired 6 months later (<a class="ext" href="https://doi.org/10.1126/scitranslmed.aac6524">Karadimas et al., 2015</a>). Some plasticity does occur after decompression, with markers of axon growth rising, but lost neurons are not replaced, and delayed decompression in animals leaves more scarring and less blood flow. The upshot is a therapeutic window: the earlier the cord is freed, the more there is left to recover (<a class="ext" href="https://doi.org/10.3389/fnins.2020.00138">Akter et al., 2020</a>).</p>
+<p>Genetics contribute at every stage. A 2020 <span class="t" data-g="systematicreview">systematic review</span> found 28 candidate genes linked to whether degeneration develops, whether it injures the cord, how severe the injury is, and how the patient responds to surgery, but the studies were small and mostly unreplicated (<a class="ext" href="https://doi.org/10.3390/jcm9010282">Pope et al., 2020a</a>).</p>
+  </div>
+</section>
+<section class="block" id="epidemiology">
+  <div class="wrap">
+    <p class="sec-eyebrow">Who is affected</p>
+    <h2>Common, mostly silent, and mostly undiagnosed</h2>
+<p>The <span class="t" data-g="prevalence">prevalence</span> of degenerative cervical myelopathy is uncertain, and the uncertainty is itself the main epidemiological fact (Figure 2). The best pooled estimate of <span class="t" data-g="cordcompression">cord compression</span> on <span class="t" data-g="mri">MRI</span> in people scanned for unrelated reasons is 24.2% (95% CI 12.4 to 36) across 11 studies and 3,686 people, rising from 7.4% under age 60 to 35.3% at 60 and over (<a class="ext" href="https://doi.org/10.1177/2192568220934496">Smith et al., 2021</a>). Among people whose scans were prompted by symptoms of myelopathy, 81% had compression. The same review pooled three studies of healthy volunteers who were also examined clinically and found that 2.3% (95% CI 1.4 to 3.1) met criteria for DCM, which is the basis for the widely quoted figure of “1 in 50 adults” (<a class="ext" href="https://doi.org/10.1177/2192568220934496">Smith et al., 2021</a>; <a class="ext" href="https://doi.org/10.1371/journal.pmed.1004447">Davies et al., 2024b</a>).</p>
+<figure>
+<svg viewBox="0 0 740 300" role="img" aria-label="Horizontal bar chart. Cord compression on MRI is present in about 35 percent of healthy adults aged 60 and over, 24 percent of all healthy adults, and 7 percent of those under 60. About 2.3 percent of healthy volunteers meet clinical criteria for degenerative cervical myelopathy, while UK hospital records capture only 0.19 percent of adults. Whiskers show 95 percent confidence intervals.">
+
+<line x1="320" y1="26" x2="320" y2="262" stroke="currentColor" stroke-width="0.6" opacity="0.12" stroke-linecap="round"/>
+<text x="320" y="280" font-size="10.5" text-anchor="middle" fill="var(--muted)" font-family="IBM Plex Mono, ui-monospace, monospace"><tspan x="320" dy="0">0</tspan></text>
+<line x1="383.333" y1="26" x2="383.333" y2="262" stroke="currentColor" stroke-width="0.6" opacity="0.12" stroke-linecap="round"/>
+<text x="383.333" y="280" font-size="10.5" text-anchor="middle" fill="var(--muted)" font-family="IBM Plex Mono, ui-monospace, monospace"><tspan x="383.333" dy="0">10</tspan></text>
+<line x1="446.667" y1="26" x2="446.667" y2="262" stroke="currentColor" stroke-width="0.6" opacity="0.12" stroke-linecap="round"/>
+<text x="446.667" y="280" font-size="10.5" text-anchor="middle" fill="var(--muted)" font-family="IBM Plex Mono, ui-monospace, monospace"><tspan x="446.667" dy="0">20</tspan></text>
+<line x1="510" y1="26" x2="510" y2="262" stroke="currentColor" stroke-width="0.6" opacity="0.12" stroke-linecap="round"/>
+<text x="510" y="280" font-size="10.5" text-anchor="middle" fill="var(--muted)" font-family="IBM Plex Mono, ui-monospace, monospace"><tspan x="510" dy="0">30</tspan></text>
+<line x1="573.333" y1="26" x2="573.333" y2="262" stroke="currentColor" stroke-width="0.6" opacity="0.12" stroke-linecap="round"/>
+<text x="573.333" y="280" font-size="10.5" text-anchor="middle" fill="var(--muted)" font-family="IBM Plex Mono, ui-monospace, monospace"><tspan x="573.333" dy="0">40</tspan></text>
+<line x1="636.667" y1="26" x2="636.667" y2="262" stroke="currentColor" stroke-width="0.6" opacity="0.12" stroke-linecap="round"/>
+<text x="636.667" y="280" font-size="10.5" text-anchor="middle" fill="var(--muted)" font-family="IBM Plex Mono, ui-monospace, monospace"><tspan x="636.667" dy="0">50</tspan></text>
+<line x1="700" y1="26" x2="700" y2="262" stroke="currentColor" stroke-width="0.6" opacity="0.12" stroke-linecap="round"/>
+<text x="700" y="280" font-size="10.5" text-anchor="middle" fill="var(--muted)" font-family="IBM Plex Mono, ui-monospace, monospace"><tspan x="700" dy="0">60</tspan></text>
+<line x1="320" y1="26" x2="320" y2="262" stroke="var(--ink-2)" stroke-width="1" stroke-linecap="round"/>
+<text x="510" y="294" font-size="11" text-anchor="middle" fill="var(--muted)" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif"><tspan x="510" dy="0">Percent of population</tspan></text>
+<text x="306" y="58" font-size="11.5" text-anchor="end" fill="var(--ink-2)" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif"><tspan x="306" dy="0">Cord compression on MRI:</tspan></text>
+<text x="306" y="72" font-size="11.5" text-anchor="end" fill="currentColor" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif"><tspan x="306" dy="0">healthy adults 60 and over</tspan></text>
+<rect x="320" y="53" width="223.567" height="16" rx="3" fill="var(--mark)" stroke="none"/>
+<line x1="409.3" y1="61" x2="677.833" y2="61" stroke="var(--ink-2)" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="409.3" y1="56" x2="409.3" y2="66" stroke="var(--ink-2)" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="677.833" y1="56" x2="677.833" y2="66" stroke="var(--ink-2)" stroke-width="1.2" stroke-linecap="round"/>
+<text x="685.833" y="65" font-size="11" text-anchor="start" fill="currentColor" font-family="IBM Plex Mono, ui-monospace, monospace"><tspan x="685.833" dy="0">35.3%</tspan></text>
+<text x="306" y="104" font-size="11.5" text-anchor="end" fill="var(--ink-2)" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif"><tspan x="306" dy="0">Cord compression on MRI:</tspan></text>
+<text x="306" y="118" font-size="11.5" text-anchor="end" fill="currentColor" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif"><tspan x="306" dy="0">all healthy adults</tspan></text>
+<rect x="320" y="99" width="153.267" height="16" rx="3" fill="var(--mark)" stroke="none"/>
+<line x1="398.533" y1="107" x2="548" y2="107" stroke="var(--ink-2)" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="398.533" y1="102" x2="398.533" y2="112" stroke="var(--ink-2)" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="548" y1="102" x2="548" y2="112" stroke="var(--ink-2)" stroke-width="1.2" stroke-linecap="round"/>
+<text x="556" y="111" font-size="11" text-anchor="start" fill="currentColor" font-family="IBM Plex Mono, ui-monospace, monospace"><tspan x="556" dy="0">24.2%</tspan></text>
+<text x="306" y="150" font-size="11.5" text-anchor="end" fill="var(--ink-2)" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif"><tspan x="306" dy="0">Cord compression on MRI:</tspan></text>
+<text x="306" y="164" font-size="11.5" text-anchor="end" fill="currentColor" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif"><tspan x="306" dy="0">healthy adults under 60</tspan></text>
+<rect x="320" y="145" width="46.8667" height="16" rx="3" fill="var(--mark)" stroke="none"/>
+<line x1="337.733" y1="153" x2="396" y2="153" stroke="var(--ink-2)" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="337.733" y1="148" x2="337.733" y2="158" stroke="var(--ink-2)" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="396" y1="148" x2="396" y2="158" stroke="var(--ink-2)" stroke-width="1.2" stroke-linecap="round"/>
+<text x="404" y="157" font-size="11" text-anchor="start" fill="currentColor" font-family="IBM Plex Mono, ui-monospace, monospace"><tspan x="404" dy="0">7.4%</tspan></text>
+<text x="306" y="196" font-size="11.5" text-anchor="end" fill="var(--ink-2)" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif"><tspan x="306" dy="0">Meets clinical criteria for DCM:</tspan></text>
+<text x="306" y="210" font-size="11.5" text-anchor="end" fill="currentColor" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif"><tspan x="306" dy="0">healthy volunteers</tspan></text>
+<rect x="320" y="191" width="14.5667" height="16" rx="3" fill="var(--coral)" stroke="none"/>
+<line x1="328.867" y1="199" x2="339.633" y2="199" stroke="var(--ink-2)" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="328.867" y1="194" x2="328.867" y2="204" stroke="var(--ink-2)" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="339.633" y1="194" x2="339.633" y2="204" stroke="var(--ink-2)" stroke-width="1.2" stroke-linecap="round"/>
+<text x="347.633" y="203" font-size="11" text-anchor="start" fill="currentColor" font-family="IBM Plex Mono, ui-monospace, monospace"><tspan x="347.633" dy="0">2.3%</tspan></text>
+<text x="306" y="242" font-size="11.5" text-anchor="end" fill="var(--ink-2)" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif"><tspan x="306" dy="0">DCM recorded in hospital data:</tspan></text>
+<text x="306" y="256" font-size="11.5" text-anchor="end" fill="currentColor" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif"><tspan x="306" dy="0">UK adults</tspan></text>
+<rect x="320" y="237" width="1.5" height="16" rx="3" fill="var(--coral)" stroke="none"/>
+<line x1="321.077" y1="245" x2="321.33" y2="245" stroke="var(--ink-2)" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="321.077" y1="240" x2="321.077" y2="250" stroke="var(--ink-2)" stroke-width="1.2" stroke-linecap="round"/>
+<line x1="321.33" y1="240" x2="321.33" y2="250" stroke="var(--ink-2)" stroke-width="1.2" stroke-linecap="round"/>
+<text x="329.33" y="249" font-size="11" text-anchor="start" fill="currentColor" font-family="IBM Plex Mono, ui-monospace, monospace"><tspan x="329.33" dy="0">0.19%</tspan></text>
+</svg>
+<figcaption><span class="figno">Figure 2.</span> <b>Most cord compression is silent, and most myelopathy is undiagnosed.</b> Pooled MRI prevalence of cord compression in people scanned for unrelated reasons, the share of healthy volunteers meeting clinical criteria for DCM (<a class="ext" href="https://doi.org/10.1177/2192568220934496">Smith et al., 2021</a>), and the prevalence of DCM recorded in English hospital data (<a class="ext" href="https://doi.org/10.1007/s00415-022-11349-8">Grodzinski et al., 2023</a>). Whiskers are 95% confidence intervals.</figcaption>
+</figure>
+<p>Administrative data tell a different story. Hospital-recorded prevalence in England was 0.19% of adults (95% CI 0.17 to 0.21), roughly a twelfth of the 2.2% that the compression data imply, and the two estimates diverge most in the old: recorded prevalence peaks at 0.42% at ages 50 to 54 and falls to 0.12% after 79, while the compression-based estimate keeps rising to about 4% in the same age group (<a class="ext" href="https://doi.org/10.1007/s00415-022-11349-8">Grodzinski et al., 2023</a>). Part of the gap is coding: DCM has had no specific <span class="t" data-g="icd">ICD code</span>, so cases scatter across several codes (<a class="ext" href="https://doi.org/10.1097/BRS.0000000000000913">Nouri et al., 2015</a>). Part is clinical: unsteadiness and clumsy hands in an 80-year-old are readily attributed to age.</p>
+<p>Estimates based on treated cases are therefore minimums. A Dutch neurosurgical practice serving 1.7 million people operated on 1.6 per 100,000 inhabitants per year (<a class="ext" href="https://doi.org/10.1007/s00586-013-2781-x">Boogaarts and Bartels, 2015</a>). A 12-year national cohort in Taiwan found hospitalization for the condition at 4.04 per 100,000 person-years, higher in men and rising steeply with age (<a class="ext" href="https://doi.org/10.3171/2013.4.FOCUS13122">Wu et al., 2013</a>). Combining nontraumatic <span class="t" data-g="sci">spinal cord injury</span> data, the 2015 review put the North American incidence at a minimum of 41 per million per year and the prevalence at a minimum of 605 per million (<a class="ext" href="https://doi.org/10.1097/BRS.0000000000000913">Nouri et al., 2015</a>).</p>
+<h3>Who gets it</h3>
+<p>Patients in the large surgical cohorts were in their mid-50s on average, and about two thirds were men: the international AO Spine cohort of 479 patients had a mean age of 56.4 years and was 65% male (<a class="ext" href="https://doi.org/10.1097/BRS.0000000000000988">Fehlings et al., 2015</a>). Regional differences are striking. Pooled compression prevalence in healthy American and European populations (39.7%) was more than three times that in Asian populations (11.1%), a difference the authors could not fully explain, while <span class="t" data-g="opll">OPLL</span> runs the other way, being far more common in East Asian than in Western populations (<a class="ext" href="https://doi.org/10.1177/2192568220934496">Smith et al., 2021</a>; <a class="ext" href="https://doi.org/10.1097/BRS.0b013e318241ad33">Matsunaga and Sakou, 2012</a>; <a class="ext" href="https://doi.org/10.3390/jcm11185386">Sakai et al., 2022</a>).</p>
+<div class="tablewrap"><table><thead><tr><th>Factor</th><th>What is known</th><th>Evidence</th></tr></thead><tbody><tr><td>Age</td><td>Compression prevalence rises from 7.4% under 60 to 35.3% at 60 and over; hospitalization rises steeply with age (<a class="ext" href="https://doi.org/10.1177/2192568220934496">Smith et al., 2021</a>; <a class="ext" href="https://doi.org/10.3171/2013.4.FOCUS13122">Wu et al., 2013</a>)</td><td>Consistent across studies</td></tr><tr><td>Male sex</td><td>About two thirds of surgical patients; higher hospitalization rates in men (<a class="ext" href="https://doi.org/10.1097/BRS.0000000000000988">Fehlings et al., 2015</a>; <a class="ext" href="https://doi.org/10.3171/2013.4.FOCUS13122">Wu et al., 2013</a>)</td><td>Consistent</td></tr><tr><td>Congenitally narrow canal</td><td>Sagittal diameter under 13 mm; cord filling ≥70% of the canal in 8% of surgical patients, who presented 5 years younger (<a class="ext" href="https://doi.org/10.1007/s00586-012-2437-2">Bajwa et al., 2012</a>; <a class="ext" href="https://doi.org/10.1177/21925682211036071">Nouri et al., 2022</a>)</td><td>Anatomic and cohort data</td></tr><tr><td>OPLL</td><td>1.9–4.3% of Japanese adults over 30; strongly genetic; progresses in a minority (<a class="ext" href="https://doi.org/10.1097/BRS.0b013e318241ad33">Matsunaga and Sakou, 2012</a>)</td><td>Population surveys, Japan</td></tr><tr><td>Congenital fused vertebrae</td><td>2.4% of DCM patients versus 0.5–0.7% of the general population (<a class="ext" href="https://doi.org/10.1177/21925682211036071">Nouri et al., 2022</a>)</td><td>Cohort comparison</td></tr><tr><td>Genetic variants</td><td>28 candidate genes across disc degeneration, cord injury, severity, and surgical response (<a class="ext" href="https://doi.org/10.3390/jcm9010282">Pope et al., 2020a</a>)</td><td>Small, largely unreplicated</td></tr><tr><td>Occupational loading</td><td>Carrying loads on the head and similar exposures have been proposed to accelerate degeneration (<a class="ext" href="https://doi.org/10.1097/BRS.0000000000000913">Nouri et al., 2015</a>)</td><td>Descriptive</td></tr></tbody></table></div><p class="tablenote">Factors that raise the risk of degenerative cervical myelopathy, with the kind of evidence behind each.</p>
+<p>A final population is people who have already fallen. In a prospective study at a trauma center, 18% of cognitively intact patients admitted with a hip fracture after a fall had clinical findings of previously undiagnosed cervical myelopathy, against none of the age-matched controls having elective hip replacement (<a class="ext" href="https://doi.org/10.1097/BOT.0000000000000485">Radcliff et al., 2016</a>).</p>
+  </div>
+</section>
+<section class="block" id="presentation">
+  <div class="wrap">
+    <p class="sec-eyebrow">Symptoms and signs</p>
+    <h2>Why the first symptoms are so easy to dismiss</h2>
+<p>Degenerative cervical myelopathy announces itself with symptoms that each have a more familiar explanation. A scoping review of 61 studies found that the commonest complaints were <span class="t" data-g="paresthesia">paresthesias</span> of some kind (86% of patients), hand numbness (82%), hand paresthesias (79%), and impaired gait (72%), with neck or shoulder pain in about half (<a class="ext" href="https://doi.org/10.1177/21925682231210468">Jiang et al., 2024b</a>). <span class="t" data-g="autonomic">Bladder symptoms</span>, usually urgency or hesitancy, were reported by 38% and bowel symptoms by 23%. In a survey of 171 people living with the condition, poor balance was the single most common current symptom (84%), yet the commonest <em>first</em> symptom was neck pain, and 80% had waited more than 6 months for a diagnosis; a feeling of heavy legs was the only initial symptom associated with being diagnosed early (<a class="ext" href="https://doi.org/10.1371/journal.pone.0281856">Munro et al., 2023</a>).</p>
+<div class="tablewrap"><table><thead><tr><th>Symptom</th><th>Share of patients</th></tr></thead><tbody><tr><td>Paresthesias (unspecified)</td><td><span class="num">86%</span><div class="bar"><i style="width:86%"></i></div></td></tr><tr><td>Hand numbness</td><td><span class="num">82%</span><div class="bar"><i style="width:82%"></i></div></td></tr><tr><td>Hand paresthesias</td><td><span class="num">79%</span><div class="bar"><i style="width:79%"></i></div></td></tr><tr><td>Gait impairment</td><td><span class="num">72%</span><div class="bar"><i style="width:72%"></i></div></td></tr><tr><td>Neck or shoulder pain</td><td><span class="num">51%</span><div class="bar"><i style="width:51%"></i></div></td></tr><tr><td>Bladder dysfunction</td><td><span class="num">38%</span><div class="bar"><i style="width:38%"></i></div></td></tr><tr><td>Bowel dysfunction</td><td><span class="num">23%</span><div class="bar"><i style="width:23%"></i></div></td></tr><tr><td>Back pain</td><td><span class="num">19%</span><div class="bar"><i style="width:19%"></i></div></td></tr><tr><td>Lower limb pain</td><td><span class="num">10%</span><div class="bar"><i style="width:10%"></i></div></td></tr><tr><td>Sexual dysfunction</td><td><span class="num">4%</span><div class="bar"><i style="width:4%"></i></div></td></tr></tbody></table></div><p class="tablenote">How often symptoms are reported by people diagnosed with degenerative cervical myelopathy, pooled from 61 studies (<a class="ext" href="https://doi.org/10.1177/21925682231210468">Jiang et al., 2024b</a>).</p>
+<p>The pattern is more telling than any single symptom. Symptoms are typically in both hands rather than one, involve the legs as well as the arms, spare the face, and progress over months to years, often in steps with plateaus between (<a class="ext" href="https://doi.org/10.1177/21925682211072847">Tetreault et al., 2022</a>; <a class="ext" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6741789/">Milligan et al., 2019</a>). Patients describe dropping objects, deteriorating handwriting, difficulty with buttons and keys, needing the handrail on stairs, and urgency with little warning. A shock-like sensation shooting down the spine on bending the neck, the <span class="t" data-g="lhermitte">Lhermitte sign</span>, appears in more severe cases (<a class="ext" href="https://doi.org/10.1136/bmj.k186">Davies et al., 2018</a>).</p>
+<h3>What the examination shows, and what it misses</h3>
+<p>The examination looks for the signature of cord injury: <span class="t" data-g="myelopathicsigns">upper motor neuron signs</span> below the level of compression, sometimes with <span class="t" data-g="lmnsigns">lower motor neuron signs</span> in the arms at that level. A <span class="t" data-g="systematicreview">systematic review</span> pooling case-control studies ranked the signs by how well they rule the diagnosis in or out (<a class="ext" href="https://doi.org/10.1177/21925682231209869">Jiang et al., 2024a</a>). The most sensitive were <span class="t" data-g="hyperreflexia">hyperreflexia</span> and the <span class="t" data-g="tromner">Trömner sign</span>; the most specific were the <span class="t" data-g="babinski">Babinski sign</span>, <span class="t" data-g="clonus">clonus</span>, the Trömner sign, and the <span class="t" data-g="invertedsupinator">inverted supinator sign</span>. The familiar <span class="t" data-g="hoffmann">Hoffmann sign</span> performed inconsistently across studies.</p>
+<div class="tablewrap"><table><thead><tr><th>Sign</th><th>Sensitivity</th><th>Specificity</th><th>Note</th></tr></thead><tbody><tr><td>Hyperreflexia (any)</td><td>79% pooled</td><td>moderate</td><td>Did not separate patients from controls in one practice (<a class="ext" href="https://doi.org/10.1097/BRS.0b013e31819c944b">Rhee et al., 2009</a>)</td></tr><tr><td>Trömner sign</td><td><span class="num">93–94%</span><div class="rng"><i style="left:93%;width:1%"></i></div></td><td><span class="num">79–100%</span><div class="rng"><i style="left:79%;width:21%"></i></div></td><td>Two small studies only</td></tr><tr><td>Hoffmann sign</td><td><span class="num">25–100%</span><div class="rng"><i style="left:25%;width:75%"></i></div></td><td><span class="num">50–100%</span><div class="rng"><i style="left:50%;width:50%"></i></div></td><td>59% of patients versus 16% of controls (<a class="ext" href="https://doi.org/10.1097/BRS.0b013e31819c944b">Rhee et al., 2009</a>)</td></tr><tr><td>Inverted supinator sign</td><td><span class="num">18–75%</span><div class="rng"><i style="left:18%;width:57%"></i></div></td><td><span class="num">78–99%</span><div class="rng"><i style="left:78%;width:21%"></i></div></td><td>Localizes to C5–C6</td></tr><tr><td>Babinski sign</td><td><span class="num">7–36%</span><div class="rng"><i style="left:7%;width:29%"></i></div></td><td><span class="num">93–100%</span><div class="rng"><i style="left:93%;width:7%"></i></div></td><td>Marks more severe disease</td></tr><tr><td>Clonus</td><td><span class="num">7–13%</span><div class="rng"><i style="left:7%;width:6%"></i></div></td><td><span class="num">96–99%</span><div class="rng"><i style="left:96%;width:3%"></i></div></td><td>Very specific, rarely present</td></tr><tr><td>Gait abnormality</td><td>19% any; <span class="num">60–95%</span><div class="rng"><i style="left:60%;width:35%"></i></div> for <span class="t" data-g="spasticity">spastic gait</span></td><td>94%</td><td><span class="t" data-g="tandemgait">Tandem walking</span> exposes early imbalance</td></tr><tr><td><span class="t" data-g="romberg">Romberg test</span></td><td><span class="num">34–42%</span><div class="rng"><i style="left:34%;width:8%"></i></div></td><td>not pooled</td><td>Rises to 74% when combined with walking</td></tr></tbody></table></div><p class="tablenote">Diagnostic performance of examination signs for cervical myelopathy. Ranges span the case-control studies pooled by <a class="ext" href="https://doi.org/10.1177/21925682231209869">Jiang et al. (2024a)</a>; the single-practice figures are from <a class="ext" href="https://doi.org/10.1097/BRS.0b013e31819c944b">Rhee et al. (2009)</a>, who compared surgically confirmed patients with controls who had neck or arm pain without cord compression.</p>
+<div class="flag"><span class="lab">A normal examination does not exclude the diagnosis</span><p>In a prospective surgical series, 21% of patients who had cervical myelopathy confirmed at surgery, and who improved afterward, had no myelopathic signs at all on examination (<a class="ext" href="https://doi.org/10.1097/BRS.0b013e31819c944b">Rhee et al., 2009</a>). Examination findings have low sensitivity and high specificity: when present they are strong evidence, when absent they prove little (<a class="ext" href="https://doi.org/10.1136/bmj.k186">Davies et al., 2018</a>). Persistent bilateral hand numbness with any gait change deserves an <span class="t" data-g="mri">MRI</span> regardless of the reflexes.</p></div>
+<h3>Grading severity</h3>
+<p>Two scales organize everything else in this briefing. The <span class="t" data-g="mjoa">modified Japanese Orthopaedic Association score</span>, adapted by <a class="ext" href="https://doi.org/10.1097/00002517-199109000-00005">Benzel et al. (1991)</a> from a Japanese scale to replace chopsticks with a spoon, rates four domains for a maximum of 18 points (<a class="ext" href="https://www.ncbi.nlm.nih.gov/books/NBK482312/">Margetis and Donnally, 2025</a>). It is the primary outcome in nearly every treatment study, and analysis of 757 patients in the AO Spine cohorts defined mild disease as 15 to 17, moderate as 12 to 14, and severe as 11 or less (<a class="ext" href="https://doi.org/10.1007/s00586-016-4660-8">Tetreault et al., 2017</a>). Its limitations matter for reading the literature: its four items hang together only moderately, with bladder function measuring something different from the rest; it has a ceiling that hides improvement in mild disease; and a one-point change can mean anything from slightly easier buttons to losing the ability to walk (<a class="ext" href="https://doi.org/10.1097/BRS.0000000000000648">Kopjar et al., 2015</a>; <a class="ext" href="https://doi.org/10.1097/BRS.0000000000001127">Tetreault et al., 2015</a>). The <span class="t" data-g="mcid">minimum clinically important difference</span> is about 1 point for mild, 2 for moderate, and 3 for severe disease (<a class="ext" href="https://doi.org/10.1097/BRS.0000000000001127">Tetreault et al., 2015</a>).</p>
+<div class="tablewrap"><table><thead><tr><th>Domain</th><th>Points</th><th>Anchors</th></tr></thead><tbody><tr><td>Motor function, arms and hands</td><td>0–5</td><td>0 cannot move hands; 2 eats with a spoon but cannot button a shirt; 4 buttons a shirt with slight difficulty; 5 normal</td></tr><tr><td>Motor function, legs</td><td>0–7</td><td>0 no movement or sensation; 3 walks on flat ground with a cane; 5 climbs stairs unaided but unsteady; 7 normal</td></tr><tr><td>Sensation, hands</td><td>0–3</td><td>0 no sensation; 1 severe loss or constant pain; 2 mild loss; 3 normal</td></tr><tr><td>Bladder function</td><td>0–3</td><td>0 cannot initiate urination; 1 marked difficulty; 2 hesitancy or slow stream; 3 normal</td></tr><tr><td>Severity bands</td><td>18</td><td>Mild 15–17, moderate 12–14, severe 0–11</td></tr></tbody></table></div><p class="tablenote">The modified Japanese Orthopaedic Association (mJOA) score. Points are awarded per domain and summed; 18 is normal. Domain descriptions follow <a class="ext" href="https://www.ncbi.nlm.nih.gov/books/NBK482312/">Margetis and Donnally (2025)</a>; severity bands follow <a class="ext" href="https://doi.org/10.1007/s00586-016-4660-8">Tetreault et al. (2017)</a>.</p>
+<p>The older <span class="t" data-g="nurick">Nurick grade</span> rates walking alone, from 0 (root symptoms only) through 1 (cord signs with a normal gait), 2 (gait difficulty but working), 3 (gait difficulty preventing work but walking unaided), and 4 (walks only with help) to 5 (wheelchair or bed bound) (<a class="ext" href="https://doi.org/10.1093/brain/95.1.87">Nurick, 1972</a>; <a class="ext" href="https://www.ncbi.nlm.nih.gov/books/NBK482312/">Margetis and Donnally, 2025</a>). It is coarse, but its anchoring in employment and independence is what gave the mJOA severity bands their meaning.</p>
+  </div>
+</section>
+<section class="block" id="naturalhistory">
+  <div class="wrap">
+    <p class="sec-eyebrow">Natural history</p>
+    <h2>What happens without treatment</h2>
+<p>The <span class="t" data-g="naturalhistory">natural history</span> of degenerative cervical myelopathy is known only in outline, because most patients diagnosed in the modern era have been operated on. Three questions have usable answers: how often silent compression becomes myelopathy, how often established myelopathy worsens, and how much a compressed cord raises the risk of sudden injury.</p>
+<h3>From silent compression to myelopathy</h3>
+<p>The largest prospective study followed 199 people with <span class="t" data-g="mri">MRI</span> <span class="t" data-g="cordcompression">cord compression</span> but no myelopathy for 2 to 12 years: 8% had developed clinical myelopathy by 12 months and 22.6% by a median of 44 months (<a class="ext" href="https://doi.org/10.1007/s00586-008-0585-1">Bednarik et al., 2008</a>). These two figures, roughly 8% at 1 year and 23% at 4 years, anchor every guideline (<a class="ext" href="https://doi.org/10.1097/BRS.0b013e3182a7f2e7">Wilson et al., 2013</a>; <a class="ext" href="https://doi.org/10.1177/2192568217701914">Fehlings et al., 2017b</a>). The guideline group pooled the predictors of conversion as <span class="t" data-g="relativerisk">relative risks</span> (table below). A later cohort of 112 patients found 13.4% converting over a median of 3 years, with <span class="t" data-g="radiculopathy">radiculopathy</span>, a cord cross-sectional area of 70 mm² or less, and a <span class="t" data-g="compressionratio">compression ratio</span> of 0.4 or less as the independent predictors (<a class="ext" href="https://doi.org/10.1002/brb3.797">Kadanka et al., 2017</a>).</p>
+<div class="tablewrap"><table><thead><tr><th>Predictor</th><th>Relative risk (95% CI)</th><th>Comment</th></tr></thead><tbody><tr><td>Symptomatic radiculopathy</td><td>3.0 (2.0–4.4)</td><td>Nerve-root pain, weakness, or numbness in an arm</td></tr><tr><td>Prolonged <span class="t" data-g="mep">motor evoked potentials</span></td><td>3.2 (1.9–5.6)</td><td>Slowed conduction in the motor tracts</td></tr><tr><td>Prolonged <span class="t" data-g="ssep">somatosensory evoked potentials</span></td><td>2.9 (1.7–5.1)</td><td>Slowed conduction in the sensory tracts</td></tr><tr><td><span class="t" data-g="emg">EMG</span> signs of anterior horn injury</td><td>2.4 (1.5–3.9)</td><td>Denervation in muscles at the compressed level</td></tr><tr><td><span class="t" data-g="t2hyperintensity">T2 hyperintensity</span> on MRI</td><td>1.7 (1.0–2.7)</td><td>Present in 35.6% of those who progressed versus 21.4% who did not; evidence conflicting</td></tr><tr><td>Cord cross-sectional area ≤70 mm²</td><td>independent predictor</td><td>Together with <span class="t" data-g="compressionratio">compression ratio</span> ≤0.4 (<a class="ext" href="https://doi.org/10.1002/brb3.797">Kadanka et al., 2017</a>)</td></tr></tbody></table></div><p class="tablenote">What predicts progression from silent cord compression to myelopathy. Relative risks pooled by the 2017 guideline group (<a class="ext" href="https://doi.org/10.1177/2192568217701914">Fehlings et al., 2017b</a>); MRI thresholds from <a class="ext" href="https://doi.org/10.1002/brb3.797">Kadanka et al. (2017)</a>.</p>
+<h3>Once myelopathy is established</h3>
+<p><span class="t" data-g="systematicreview">Systematic reviews</span> of patients managed without surgery find that 20 to 62% deteriorate by at least one point on the Japanese Orthopaedic Association scale over 3 to 6 years (<a class="ext" href="https://doi.org/10.1177/2192568217701914">Fehlings et al., 2017b</a>; <a class="ext" href="https://doi.org/10.1097/BRS.0b013e3182a7f2c3">Karadimas et al., 2013</a>). The spread reflects who was studied: the only randomized trial, which enrolled 64 Czech patients with mild or moderate, slowly progressive disease and followed them for 10 years, found that median <span class="t" data-g="mjoa">mJOA</span> scores were unchanged in both the conservative and the surgical arm, with about half of each group somewhat worse by the end and no difference between them (<a class="ext" href="https://doi.org/10.1007/s00586-011-1811-9">Kadaňka et al., 2011</a>). Cohorts including more severe or faster-moving disease show higher deterioration rates. Progression is typically stepwise, with long plateaus punctuated by declines (<a class="ext" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6741789/">Milligan et al., 2019</a>), and the end state of unchecked progression is <span class="t" data-g="tetraplegia">tetraplegia</span> and wheelchair dependence (<a class="ext" href="https://doi.org/10.1136/bmj.k186">Davies et al., 2018</a>).</p>
+<h3>A compressed cord is a vulnerable cord</h3>
+<p>A cord with no reserve is more easily injured by a fall or a whiplash. In the Taiwanese national cohort, patients with <span class="t" data-g="csm">cervical spondylotic myelopathy</span> managed without surgery were hospitalized for <span class="t" data-g="sci">spinal cord injury</span> at 13.9 per 1,000 person-years, against 9.4 among those who had surgery, an adjusted <span class="t" data-g="hazardratio">hazard ratio</span> of 1.57 (<a class="ext" href="https://doi.org/10.3171/2013.4.FOCUS13122">Wu et al., 2013</a>); both figures are far above the rate in the general population of about 0.18 per 1,000 (<a class="ext" href="https://doi.org/10.1177/2192568217701914">Fehlings et al., 2017b</a>). A later analysis of the same database, covering 17,258 patients, put the overall rate at 2.0 per 1,000 person-years, highest in unoperated patients with <span class="t" data-g="opll">OPLL</span> (<a class="ext" href="https://doi.org/10.3171/2016.3.FOCUS1663">Chen et al., 2016</a>). The hip-fracture study described above closes the loop: undiagnosed myelopathy causes falls, and falls injure the cord further (<a class="ext" href="https://doi.org/10.1097/BOT.0000000000000485">Radcliff et al., 2016</a>).</p>
+<div class="note"><span class="lab">What the natural history data can and cannot say</span><p>Every number above comes from selected patients: those referred to a center, those mild enough to be left unoperated, or those who happened to have an MRI. None is a population estimate. The guideline group rated the evidence for deterioration rates as moderate and for the hospitalization rates as low (<a class="ext" href="https://doi.org/10.1177/2192568217701914">Fehlings et al., 2017b</a>).</p></div>
+  </div>
+</section>
+<section class="block" id="diagnosis">
+  <div class="wrap">
+    <p class="sec-eyebrow">Diagnosis</p>
+    <h2>Getting to an MRI is the bottleneck</h2>
+<p>Diagnosis requires only two things: a clinician who thinks of the condition and a cervical <span class="t" data-g="mri">MRI</span> that shows <span class="t" data-g="cordcompression">cord compression</span> matching the clinical picture. The delay lives almost entirely in the first step. In a series of 42 patients who eventually had surgery, the mean time from first symptom to diagnosis was 2.2 years (SD 2.3), after a mean of 5.2 physician visits; 69% had first consulted a family physician, 43% had been diagnosed initially with <span class="t" data-g="carpaltunnel">carpal tunnel syndrome</span>, and family physicians made the correct diagnosis in under 5% of cases (<a class="ext" href="https://doi.org/10.3171/2013.3.FOCUS1374">Behrbalk et al., 2013</a>).</p>
+<figure>
+<svg viewBox="0 0 740 232" role="img" aria-label="Timeline over 24 months. Mean intervals from symptom onset: referral by primary care at 6.4 months, cervical MRI at 12.5 months, neurosurgical review at 15.8 months, surgery at 22.1 months. Below, function measured by the mJOA fell from 16.0 at the primary care assessment to 14.8 at the surgical assessment; 59 percent of patients deteriorated during the pathway.">
+<defs><marker id="arr-ink2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="var(--ink-2)"/></marker></defs>
+<line x1="50" y1="125" x2="720" y2="125" stroke="var(--ink-2)" stroke-width="1.2" marker-end="url(#arr-ink2)" stroke-linecap="round"/>
+<line x1="60" y1="121" x2="60" y2="129" stroke="var(--ink-2)" stroke-width="1" stroke-linecap="round"/>
+<text x="60" y="147" font-size="10.5" text-anchor="middle" fill="var(--muted)" font-family="IBM Plex Mono, ui-monospace, monospace"><tspan x="60" dy="0">0</tspan></text>
+<line x1="220" y1="121" x2="220" y2="129" stroke="var(--ink-2)" stroke-width="1" stroke-linecap="round"/>
+<text x="220" y="147" font-size="10.5" text-anchor="middle" fill="var(--muted)" font-family="IBM Plex Mono, ui-monospace, monospace"><tspan x="220" dy="0">6</tspan></text>
+<line x1="380" y1="121" x2="380" y2="129" stroke="var(--ink-2)" stroke-width="1" stroke-linecap="round"/>
+<text x="380" y="147" font-size="10.5" text-anchor="middle" fill="var(--muted)" font-family="IBM Plex Mono, ui-monospace, monospace"><tspan x="380" dy="0">12</tspan></text>
+<line x1="540" y1="121" x2="540" y2="129" stroke="var(--ink-2)" stroke-width="1" stroke-linecap="round"/>
+<text x="540" y="147" font-size="10.5" text-anchor="middle" fill="var(--muted)" font-family="IBM Plex Mono, ui-monospace, monospace"><tspan x="540" dy="0">18</tspan></text>
+<line x1="700" y1="121" x2="700" y2="129" stroke="var(--ink-2)" stroke-width="1" stroke-linecap="round"/>
+<text x="700" y="147" font-size="10.5" text-anchor="middle" fill="var(--muted)" font-family="IBM Plex Mono, ui-monospace, monospace"><tspan x="700" dy="0">24 months</tspan></text>
+<text x="60" y="88" font-size="11.5" text-anchor="middle" fill="currentColor" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif" font-weight="600"><tspan x="60" dy="0">Symptom onset</tspan></text>
+<text x="60" y="102" font-size="10.5" text-anchor="middle" fill="var(--muted)" font-family="IBM Plex Mono, ui-monospace, monospace"><tspan x="60" dy="0">0 months</tspan></text>
+<line x1="60" y1="108" x2="60" y2="116" stroke="var(--ink-2)" stroke-width="0.8" opacity="0.7" stroke-linecap="round"/>
+<ellipse cx="60" cy="125" rx="6.5" ry="6.5" fill="var(--mark)" stroke="var(--surface)" stroke-width="1.5"/>
+<text x="230.667" y="88" font-size="11.5" text-anchor="middle" fill="currentColor" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif" font-weight="600"><tspan x="230.667" dy="0">Referred by primary care</tspan></text>
+<text x="230.667" y="102" font-size="10.5" text-anchor="middle" fill="var(--muted)" font-family="IBM Plex Mono, ui-monospace, monospace"><tspan x="230.667" dy="0">6.4 months</tspan></text>
+<line x1="230.667" y1="108" x2="230.667" y2="116" stroke="var(--ink-2)" stroke-width="0.8" opacity="0.7" stroke-linecap="round"/>
+<ellipse cx="230.667" cy="125" rx="6.5" ry="6.5" fill="var(--mark)" stroke="var(--surface)" stroke-width="1.5"/>
+<text x="393.333" y="50" font-size="11.5" text-anchor="middle" fill="currentColor" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif" font-weight="600"><tspan x="393.333" dy="0">Cervical MRI</tspan></text>
+<text x="393.333" y="64" font-size="10.5" text-anchor="middle" fill="var(--muted)" font-family="IBM Plex Mono, ui-monospace, monospace"><tspan x="393.333" dy="0">12.5 months</tspan></text>
+<line x1="393.333" y1="70" x2="393.333" y2="116" stroke="var(--ink-2)" stroke-width="0.8" opacity="0.7" stroke-linecap="round"/>
+<ellipse cx="393.333" cy="125" rx="6.5" ry="6.5" fill="var(--mark)" stroke="var(--surface)" stroke-width="1.5"/>
+<text x="481.333" y="88" font-size="11.5" text-anchor="middle" fill="currentColor" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif" font-weight="600"><tspan x="481.333" dy="0">Neurosurgical review</tspan></text>
+<text x="481.333" y="102" font-size="10.5" text-anchor="middle" fill="var(--muted)" font-family="IBM Plex Mono, ui-monospace, monospace"><tspan x="481.333" dy="0">15.8 months</tspan></text>
+<line x1="481.333" y1="108" x2="481.333" y2="116" stroke="var(--ink-2)" stroke-width="0.8" opacity="0.7" stroke-linecap="round"/>
+<ellipse cx="481.333" cy="125" rx="6.5" ry="6.5" fill="var(--mark)" stroke="var(--surface)" stroke-width="1.5"/>
+<text x="649.333" y="88" font-size="11.5" text-anchor="middle" fill="currentColor" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif" font-weight="600"><tspan x="649.333" dy="0">Surgery</tspan></text>
+<text x="649.333" y="102" font-size="10.5" text-anchor="middle" fill="var(--muted)" font-family="IBM Plex Mono, ui-monospace, monospace"><tspan x="649.333" dy="0">22.1 months</tspan></text>
+<line x1="649.333" y1="108" x2="649.333" y2="116" stroke="var(--ink-2)" stroke-width="0.8" opacity="0.7" stroke-linecap="round"/>
+<ellipse cx="649.333" cy="125" rx="6.5" ry="6.5" fill="var(--mark)" stroke="var(--surface)" stroke-width="1.5"/>
+<text x="60" y="198" font-size="11" text-anchor="start" fill="var(--muted)" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif"><tspan x="60" dy="0">Disability while waiting</tspan></text>
+<line x1="230.667" y1="195" x2="481.333" y2="195" stroke="var(--coral)" stroke-width="2" stroke-linecap="round"/>
+<ellipse cx="230.667" cy="195" rx="5" ry="5" fill="var(--coral)" stroke="var(--surface)" stroke-width="1.5"/>
+<text x="230.667" y="184" font-size="11" text-anchor="middle" fill="currentColor" font-family="IBM Plex Mono, ui-monospace, monospace"><tspan x="230.667" dy="0">mJOA 16.0</tspan></text>
+<ellipse cx="481.333" cy="195" rx="5" ry="5" fill="var(--coral)" stroke="var(--surface)" stroke-width="1.5"/>
+<text x="481.333" y="184" font-size="11" text-anchor="middle" fill="currentColor" font-family="IBM Plex Mono, ui-monospace, monospace"><tspan x="481.333" dy="0">mJOA 14.8</tspan></text>
+<text x="356" y="216" font-size="11" text-anchor="middle" fill="var(--ink-2)" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif"><tspan x="356" dy="0">59% of patients deteriorated during the pathway</tspan></text>
+</svg>
+<figcaption><span class="figno">Figure 3.</span> <b>Two years from first symptom to operation is typical.</b> Mean intervals for 43 UK patients traced through primary and secondary care records (<a class="ext" href="https://doi.org/10.1136/bmjopen-2018-027000">Hilton et al., 2019</a>); mJOA fell from 16.0 to 14.8 while they waited, and 59% deteriorated during the pathway. An Israeli series found 2.2 years and 5.2 physician visits to diagnosis (<a class="ext" href="https://doi.org/10.3171/2013.3.FOCUS1374">Behrbalk et al., 2013</a>).</figcaption>
+</figure>
+<p>A UK study reconstructed the pathway for 43 patients from records (Figure 3). Referral from primary care came at a mean of 6.4 months after symptom onset, the MRI at 12.5 months, neurosurgical review at 15.8 months, and surgery at 22.1 months; half were first referred to a specialty other than spinal surgery, most often neurology, and 59% deteriorated measurably between the first assessment and the surgical one (<a class="ext" href="https://doi.org/10.1136/bmjopen-2018-027000">Hilton et al., 2019</a>). An online survey of 778 patients found that a delay of 1 to 2 years was typical, that longer delays were associated with greater disability, dependence on others, and unemployment, and that Black or African American respondents faced longer delays (<a class="ext" href="https://doi.org/10.1097/BRS.0000000000003305">Pope et al., 2020b</a>).</p>
+<div class="flag"><span class="lab">Who should be suspected</span><p>Anyone over 50 with progressive numbness or clumsiness in both hands, unsteadiness or falls, stiff legs, or new urinary urgency, especially in combination, needs a full neurological examination and, if there is any sign of cord involvement, a cervical MRI (<a class="ext" href="https://doi.org/10.1136/bmj.k186">Davies et al., 2018</a>). Hand symptoms in both hands at once, or hand symptoms with any leg or bladder symptom, are not carpal tunnel syndrome until proven otherwise. Rapid onset, fever, weight loss, or recent surgery point to other causes and need urgent assessment (<a class="ext" href="https://doi.org/10.1177/21925682211072847">Tetreault et al., 2022</a>).</p></div>
+<h3>Reading the MRI</h3>
+<p>MRI shows the discs, ligaments, and cord directly and is the essential test; X-rays and CT show bone but not the cord (<a class="ext" href="https://doi.org/10.1136/bmj.k186">Davies et al., 2018</a>). The radiologist reports where and how much the cord is compressed, how many levels are involved, and whether the cord's own signal has changed. A bright spot on T2-weighted images, <span class="t" data-g="t2hyperintensity">T2 hyperintensity</span>, indicates excess water from swelling or tissue loss; it is common but nonspecific and may or may not be reversible. A dark area on T1-weighted images, <span class="t" data-g="t1hypointensity">T1 hypointensity</span>, indicates established tissue loss, or <span class="t" data-g="myelomalacia">myelomalacia</span> (<a class="ext" href="https://doi.org/10.1177/21925682211072847">Tetreault et al., 2022</a>). A <span class="t" data-g="systematicreview">systematic review</span> of prognostic imaging found that the number of T2-bright segments, combined T1 and T2 change, and the ratio of signal intensities predicted a poorer surgical outcome, whereas the T2 grade alone, the <span class="t" data-g="compressionratio">compression ratio</span>, and the canal diameter did not (<a class="ext" href="https://doi.org/10.1097/BRS.0b013e3182a7eae0">Tetreault et al., 2013</a>). Because a quarter of healthy adults have compression, a compressed cord on MRI confirms the diagnosis only when it fits the symptoms and signs (<a class="ext" href="https://doi.org/10.1177/21925682211072847">Tetreault et al., 2022</a>).</p>
+<h3>Electrophysiology and other tests</h3>
+<p>Electrical tests are not needed for diagnosis but earn their place in three situations (<a class="ext" href="https://doi.org/10.1177/21925682211072847">Tetreault et al., 2022</a>). <span class="t" data-g="emg">Electromyography</span> and nerve conduction studies distinguish cord disease from carpal tunnel syndrome, peripheral neuropathy, and motor neuron disease; nerve conduction is typically normal in DCM. <span class="t" data-g="ssep">Somatosensory evoked potentials</span> and <span class="t" data-g="mep">motor evoked potentials</span> measure conduction through the cord itself and help when the scan and the examination disagree, or when someone with silent compression is being watched for progression. Blood tests for vitamin B12, copper, and inflammatory markers are routine because they exclude treatable mimics.</p>
+<h3>What else it could be</h3>
+<div class="tablewrap"><table><thead><tr><th>Condition</th><th>Why it is confused</th><th>What separates it</th></tr></thead><tbody><tr><td><span class="t" data-g="carpaltunnel">Carpal tunnel syndrome</span></td><td>Numb, tingling hands</td><td>Confined to thumb, index, and middle fingers; worse at night; no leg, gait, or bladder symptoms; abnormal median nerve conduction. The two can coexist</td></tr><tr><td><span class="t" data-g="als">Amyotrophic lateral sclerosis</span></td><td>Hand weakness and wasting with brisk reflexes</td><td>No sensory loss; fasciculations; bulbar symptoms (speech, swallowing); EMG shows denervation in regions the neck cannot explain. Misdiagnosis in either direction is well documented</td></tr><tr><td><span class="t" data-g="ms">Multiple sclerosis</span></td><td>A cord plaque can mimic compression</td><td>Younger onset; relapses; optic neuritis or eye-movement signs; brain lesions on MRI</td></tr><tr><td>Peripheral neuropathy</td><td>Numb feet and unsteadiness</td><td>Distal, symmetric, stocking-and-glove loss; reduced rather than brisk reflexes; abnormal nerve conduction</td></tr><tr><td><span class="t" data-g="b12">Subacute combined degeneration</span></td><td>Numb hands and feet, unsteady gait, brisk reflexes</td><td>Low vitamin B12 or copper; <span class="t" data-g="dorsalcolumns">dorsal column</span> signal change without compression; reversible if treated early</td></tr><tr><td><span class="t" data-g="nph">Normal pressure hydrocephalus</span></td><td>Shuffling gait plus urinary urgency in the elderly</td><td>Cognitive slowing; enlarged ventricles on brain imaging; no upper-limb signs</td></tr><tr><td><span class="t" data-g="syringomyelia">Syringomyelia</span>, tumor, other compression</td><td>Progressive cord syndrome</td><td>Visible on MRI as a cavity, mass, or other lesion rather than degenerative narrowing</td></tr><tr><td><span class="t" data-g="hsp">Hereditary spastic paraplegia</span></td><td>Stiff legs and spastic gait</td><td>Family history; no compression; legs affected far more than arms</td></tr></tbody></table></div><p class="tablenote">Conditions confused with degenerative cervical myelopathy, and what separates them (<a class="ext" href="https://doi.org/10.1177/21925682211072847">Tetreault et al., 2022</a>; <a class="ext" href="https://doi.org/10.3390/jcm14248711">Klumb et al., 2025</a>; <a class="ext" href="https://doi.org/10.3122/jabfm.2020.02.190195">McCormick et al., 2020</a>).</p>
+<p>The absence of agreed diagnostic criteria compounds the problem. There is no validated definition of what combination of symptoms, signs, and imaging constitutes DCM, and developing one is a stated research priority (<a class="ext" href="https://doi.org/10.1177/21925682211030871">Hilton et al., 2022</a>).</p>
+  </div>
+</section>
+<section class="block" id="treatment">
+  <div class="wrap">
+    <p class="sec-eyebrow">Treatment</p>
+    <h2>Surgery is the only treatment shown to stop the decline</h2>
+<p>Treatment decisions follow severity (Figure 4). The 2017 guideline from AO Spine and the Cervical Spine Research Society, built on five <span class="t" data-g="systematicreview">systematic reviews</span> and graded with the <span class="t" data-g="grade">GRADE</span> system, makes four recommendations (<a class="ext" href="https://doi.org/10.1177/2192568217701914">Fehlings et al., 2017b</a>). For severe and moderate disease (<span class="t" data-g="mjoa">mJOA</span> 14 or below) it recommends surgery, a strong recommendation on moderate-quality evidence. For mild disease (15 to 17) it suggests offering either surgery or a supervised trial of <span class="t" data-g="nonop">structured rehabilitation</span>, recommends surgery if the patient deteriorates, and suggests it if they fail to improve; this is a weak recommendation on very low to low-quality evidence. For people with <span class="t" data-g="cordcompression">cord compression</span> but no myelopathy it suggests against prophylactic surgery, with counseling about the risk and education about warning symptoms, unless there is also <span class="t" data-g="radiculopathy">radiculopathy</span>, in which case surgery or close follow-up are both options because the risk of progression is about threefold.</p>
+<figure>
+<svg viewBox="0 0 740 410" role="img" aria-label="Flowchart. Cervical cord compression on MRI. If there are signs or symptoms of myelopathy, grade severity with the mJOA: severe (11 or less) and moderate (12 to 14) get surgery, a strong recommendation; mild (15 to 17) gets surgery or a supervised trial of structured rehabilitation with close follow-up, a weak recommendation, with surgery if the patient deteriorates and consideration of surgery if they fail to improve. If there is no myelopathy, ask about radiculopathy: with it, counsel on the higher risk and offer surgery or close follow-up; without it, no prophylactic surgery, counsel, teach warning signs, and follow up.">
+<defs><marker id="arr-coral" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="var(--coral)"/></marker><marker id="arr-ink2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="var(--ink-2)"/></marker></defs>
+<rect x="250" y="14" width="240" height="34" rx="8" fill="var(--surface)" stroke="var(--ink-2)" stroke-width="1"/>
+<text x="370" y="34.68" font-size="11.5" text-anchor="middle" fill="currentColor" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif" font-weight="600"><tspan x="370" dy="0">Cervical cord compression on MRI</tspan></text>
+<line x1="370" y1="48" x2="370" y2="76" stroke="var(--ink-2)" stroke-width="1.2" marker-end="url(#arr-ink2)" stroke-linecap="round"/>
+<rect x="235" y="78" width="270" height="36" rx="8" fill="var(--accent)" stroke="var(--accent)" stroke-width="1.2" fill-opacity="0.12"/>
+<text x="370" y="99.68" font-size="11.5" text-anchor="middle" fill="currentColor" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif" font-weight="600"><tspan x="370" dy="0">Signs or symptoms of myelopathy?</tspan></text>
+<polyline points="235,96 180,96 180,146" fill="none" stroke="var(--ink-2)" stroke-width="1.2" marker-end="url(#arr-ink2)" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="206" y="92" font-size="11" text-anchor="middle" fill="var(--accent)" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif" font-weight="600"><tspan x="206" dy="0">Yes</tspan></text>
+<rect x="95" y="148" width="170" height="34" rx="8" fill="var(--surface)" stroke="var(--ink-2)" stroke-width="1"/>
+<text x="180" y="168.68" font-size="11.5" text-anchor="middle" fill="currentColor" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif"><tspan x="180" dy="0">Grade severity with the mJOA</tspan></text>
+<polyline points="180,182 180,198 65,198 65,212" fill="none" stroke="var(--ink-2)" stroke-width="1.2" marker-end="url(#arr-ink2)" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="10" y="214" width="110" height="40" rx="8" fill="var(--surface)" stroke="var(--ink-2)" stroke-width="1"/>
+<text x="65" y="230.493" font-size="11.5" text-anchor="middle" fill="currentColor" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif" font-weight="600"><tspan x="65" dy="0">Severe</tspan></text>
+<text x="65" y="244.868" font-size="11.5" text-anchor="middle" fill="var(--ink-2)" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif"><tspan x="65" dy="0">mJOA 0–11</tspan></text>
+<line x1="65" y1="254" x2="65" y2="278" stroke="var(--ink-2)" stroke-width="1.2" marker-end="url(#arr-ink2)" stroke-linecap="round"/>
+<polyline points="180,182 180,198 185,198 185,212" fill="none" stroke="var(--ink-2)" stroke-width="1.2" marker-end="url(#arr-ink2)" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="130" y="214" width="110" height="40" rx="8" fill="var(--surface)" stroke="var(--ink-2)" stroke-width="1"/>
+<text x="185" y="230.493" font-size="11.5" text-anchor="middle" fill="currentColor" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif" font-weight="600"><tspan x="185" dy="0">Moderate</tspan></text>
+<text x="185" y="244.868" font-size="11.5" text-anchor="middle" fill="var(--ink-2)" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif"><tspan x="185" dy="0">mJOA 12–14</tspan></text>
+<line x1="185" y1="254" x2="185" y2="278" stroke="var(--ink-2)" stroke-width="1.2" marker-end="url(#arr-ink2)" stroke-linecap="round"/>
+<polyline points="180,182 180,198 315,198 315,212" fill="none" stroke="var(--ink-2)" stroke-width="1.2" marker-end="url(#arr-ink2)" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="260" y="214" width="110" height="40" rx="8" fill="var(--surface)" stroke="var(--ink-2)" stroke-width="1"/>
+<text x="315" y="230.493" font-size="11.5" text-anchor="middle" fill="currentColor" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif" font-weight="600"><tspan x="315" dy="0">Mild</tspan></text>
+<text x="315" y="244.868" font-size="11.5" text-anchor="middle" fill="var(--ink-2)" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif"><tspan x="315" dy="0">mJOA 15–17</tspan></text>
+<line x1="315" y1="254" x2="315" y2="278" stroke="var(--ink-2)" stroke-width="1.2" marker-end="url(#arr-ink2)" stroke-linecap="round"/>
+<rect x="10" y="280" width="230" height="48" rx="8" fill="var(--mark)" stroke="var(--mark)" stroke-width="1.2" fill-opacity="0.2"/>
+<text x="125" y="300.493" font-size="11.5" text-anchor="middle" fill="currentColor" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif" font-weight="600"><tspan x="125" dy="0">Surgery</tspan></text>
+<text x="125" y="314.868" font-size="11.5" text-anchor="middle" fill="var(--ink-2)" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif"><tspan x="125" dy="0">strong recommendation</tspan></text>
+<rect x="255" y="280" width="150" height="76" rx="8" fill="var(--note-bg)" stroke="var(--accent)" stroke-width="1.2"/>
+<text x="330" y="300.118" font-size="11.5" text-anchor="middle" fill="currentColor" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif"><tspan x="330" dy="0">Surgery, or a supervised</tspan><tspan x="330" dy="14.375">trial of structured</tspan><tspan x="330" dy="14.375">rehabilitation with</tspan><tspan x="330" dy="14.375">close follow-up (weak)</tspan></text>
+<line x1="330" y1="356" x2="330" y2="372" stroke="var(--coral)" stroke-width="1.2" marker-end="url(#arr-coral)" stroke-linecap="round"/>
+<rect x="245" y="374" width="170" height="32" rx="8" fill="var(--flag-bg)" stroke="var(--coral)" stroke-width="1.2"/>
+<text x="330" y="386.798" font-size="10.5" text-anchor="middle" fill="currentColor" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif"><tspan x="330" dy="0">Deteriorates: operate</tspan><tspan x="330" dy="13.125">Fails to improve: consider surgery</tspan></text>
+<polyline points="505,96 590,96 590,146" fill="none" stroke="var(--ink-2)" stroke-width="1.2" marker-end="url(#arr-ink2)" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="548" y="92" font-size="11" text-anchor="middle" fill="var(--accent)" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif" font-weight="600"><tspan x="548" dy="0">No</tspan></text>
+<rect x="470" y="148" width="240" height="44" rx="8" fill="var(--accent)" stroke="var(--accent)" stroke-width="1.2" fill-opacity="0.12"/>
+<text x="590" y="166.493" font-size="11.5" text-anchor="middle" fill="currentColor" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif" font-weight="600"><tspan x="590" dy="0">Radiculopathy?</tspan></text>
+<text x="590" y="180.868" font-size="11.5" text-anchor="middle" fill="var(--ink-2)" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif"><tspan x="590" dy="0">nerve-root pain, weakness, or numbness</tspan></text>
+<polyline points="520,192 520,232" fill="none" stroke="var(--ink-2)" stroke-width="1.2" marker-end="url(#arr-ink2)" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="508" y="216" font-size="11" text-anchor="end" fill="var(--accent)" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif" font-weight="600"><tspan x="508" dy="0">Yes</tspan></text>
+<polyline points="660,192 660,232" fill="none" stroke="var(--ink-2)" stroke-width="1.2" marker-end="url(#arr-ink2)" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="672" y="216" font-size="11" text-anchor="start" fill="var(--accent)" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif" font-weight="600"><tspan x="672" dy="0">No</tspan></text>
+<rect x="445" y="234" width="150" height="92" rx="8" fill="var(--note-bg)" stroke="var(--accent)" stroke-width="1.2"/>
+<text x="520" y="254.93" font-size="11.5" text-anchor="middle" fill="currentColor" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif"><tspan x="520" dy="0">Higher risk: counsel;</tspan><tspan x="520" dy="14.375">offer surgery, or close</tspan><tspan x="520" dy="14.375">serial follow-up or</tspan><tspan x="520" dy="14.375">structured rehabilitation</tspan><tspan x="520" dy="14.375">(weak)</tspan></text>
+<rect x="600" y="234" width="135" height="92" rx="8" fill="var(--note-bg)" stroke="var(--accent)" stroke-width="1.2"/>
+<text x="667.5" y="254.93" font-size="11.5" text-anchor="middle" fill="currentColor" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif"><tspan x="667.5" dy="0">No prophylactic</tspan><tspan x="667.5" dy="14.375">surgery; counsel,</tspan><tspan x="667.5" dy="14.375">teach warning signs,</tspan><tspan x="667.5" dy="14.375">follow up clinically</tspan><tspan x="667.5" dy="14.375">(weak)</tspan></text>
+</svg>
+<figcaption><span class="figno">Figure 4.</span> <b>Severity drives the decision.</b> The 2017 AO Spine and CSRS guideline recommends surgery for moderate and severe disease, offers a choice for mild disease with surgery on deterioration, and advises against prophylactic surgery for compression without myelopathy unless radiculopathy is present (<a class="ext" href="https://doi.org/10.1177/2192568217701914">Fehlings et al., 2017b</a>). Recommendation strengths follow GRADE.</figcaption>
+</figure>
+<h3>The mild-disease question</h3>
+<p>Mild disease is where the evidence is thinnest and practice most varied. The one randomized trial found no average difference between surgery and conservative care at 3 and at 10 years in 64 patients with mild or moderate, slowly progressive disease (<a class="ext" href="https://doi.org/10.1007/s00586-011-1811-9">Kadaňka et al., 2011</a>). Against that, 193 patients with mild disease in the AO Spine cohorts had quality-of-life scores more than two standard deviations below population norms before surgery and improved significantly on every measure 2 years afterward, though the mJOA gain (0.87 points) was below the <span class="t" data-g="mcid">minimum clinically important difference</span> while disability and quality-of-life gains were substantial (<a class="ext" href="https://doi.org/10.1093/neuros/nyy133">Badhiwala et al., 2019</a>). A 2025 AO Spine appraisal of recent literature issued a conditional recommendation that surgery is a valid option for mild disease (<a class="ext" href="https://doi.org/10.1177/21925682251331050">Fehlings et al., 2025</a>). Meanwhile a survey of 699 spine professionals worldwide found that most offer nonoperative patients standardized follow-up, most often at 6-month intervals, but that what the follow-up consists of, and what would tip them toward surgery, varied widely (<a class="ext" href="https://doi.org/10.1038/s41393-023-00945-8">Brannigan et al., 2024</a>).</p>
+<h3>What nonoperative care can and cannot do</h3>
+<p>No nonoperative treatment has been shown to reverse cord injury or to change the <span class="t" data-g="naturalhistory">natural history</span> (<a class="ext" href="https://doi.org/10.1097/BRS.0b013e3182a7f41d">Rhee et al., 2013</a>). Structured rehabilitation for mild disease means supervised physiotherapy for strength and balance, activity advice, sometimes a soft collar, and scheduled reassessment to catch deterioration. Two things are to be avoided: cervical traction and spinal manipulation, which can injure a compressed cord and are considered contraindicated (<a class="ext" href="https://doi.org/10.1136/bmj.k186">Davies et al., 2018</a>; <a class="ext" href="https://doi.org/10.3122/jabfm.2020.02.190195">McCormick et al., 2020</a>). Pain and <span class="t" data-g="spasticity">spasticity</span> are treated on their own merits with neuropathic analgesics and antispasticity drugs, before and after surgery (<a class="ext" href="https://doi.org/10.1136/bmj.k186">Davies et al., 2018</a>).</p>
+<h3>Operating from the front or the back</h3>
+<p>Surgery makes room for the cord. From the front of the neck, <span class="t" data-g="acdf">anterior cervical discectomy and fusion</span> removes the offending disc and <span class="t" data-g="osteophyte">spurs</span> at one or two levels and <span class="t" data-g="fusion">fuses</span> the vertebrae; a <span class="t" data-g="corpectomy">corpectomy</span> removes a vertebral body when compression extends behind it. From the back, <span class="t" data-g="laminectomy">laminectomy</span> removes the bony roof of the canal, usually with screws and rods to prevent the neck from later slumping, while <span class="t" data-g="laminoplasty">laminoplasty</span> hinges the roof open and props it, preserving motion. The choice turns on where the compression comes from, how many levels are involved, and the alignment of the neck: anterior approaches suit focal compression from the front, OPLL, and a <span class="t" data-g="kyphosis">kyphotic</span> neck; posterior approaches suit compression at three or more levels or from behind (<a class="ext" href="https://doi.org/10.3122/jabfm.2020.02.190195">McCormick et al., 2020</a>; <a class="ext" href="https://doi.org/10.1038/s41582-019-0303-0">Badhiwala et al., 2020</a>).</p>
+<p>The only randomized comparison, 163 patients with two or more levels of compression, found no difference in patient-reported physical function at 1 year between ventral and dorsal surgery (gains of 5.9 versus 6.2 points on the SF-36 physical score), but complications were twice as frequent after ventral surgery (48% versus 24%), almost entirely temporary <span class="t" data-g="dysphagia">dysphagia</span> (41% versus none), while dorsal surgery carried more new neurological deficits (9% versus 2%) and readmissions (<a class="ext" href="https://doi.org/10.1001/jama.2021.1233">Ghogawala et al., 2021</a>). In a nonrandomized comparison within the same trial, laminoplasty had the fewest complications (10.7%). The 2025 AO Spine appraisal concluded that both approaches afford similar benefit with different complication profiles (<a class="ext" href="https://doi.org/10.1177/21925682251331050">Fehlings et al., 2025</a>).</p>
+<h3>What surgery achieves</h3>
+<p>In the international AO Spine cohort of 479 patients, mean mJOA improved from 12.5 before surgery to 14.9 at 2 years, neck-related disability fell by a third, and physical and mental quality-of-life scores rose by about 6.5 points each; neurological complications occurred in 3.1% (<a class="ext" href="https://doi.org/10.1097/BRS.0000000000000988">Fehlings et al., 2015</a>). The gain scales with severity, as the pooled analysis below shows: the sickest patients gain the most points but also start furthest from normal. Timing matters. In the AO Spine cohorts, patients operated on within 4 months of symptom onset had significantly better mJOA outcomes than those operated on later, although the mean duration of symptoms before surgery was 26 months (<a class="ext" href="https://doi.org/10.1093/neuros/nyy474">Tetreault et al., 2019</a>). Most recovery occurs within 6 to 12 months of surgery, and deficits that remain after that are likely permanent (<a class="ext" href="https://doi.org/10.1136/bmj.k186">Davies et al., 2018</a>).</p>
+<div class="tablewrap"><table><thead><tr><th>Preoperative severity</th><th>Mean mJOA gain (95% CI)</th><th>MCID</th><th>Interpretation</th></tr></thead><tbody><tr><td>Severe (mJOA 0–11)</td><td>4.91 (4.34–5.49)</td><td>3</td><td>Large gain, but from a low base</td></tr><tr><td>Moderate (12–14)</td><td>2.58 (2.07–3.09)</td><td>2</td><td>Gain exceeds the threshold</td></tr><tr><td>Mild (15–17)</td><td>1.29 (0.70–1.87)</td><td>1</td><td>Gain near the threshold; scale ceiling limits detection</td></tr></tbody></table></div><p class="tablenote">Mean improvement in mJOA after surgery by preoperative severity, pooled from prospective cohorts (<a class="ext" href="https://doi.org/10.1177/2192568217710137">Fehlings et al., 2017a</a>), against the minimum clinically important difference for each band (<a class="ext" href="https://doi.org/10.1097/BRS.0000000000001127">Tetreault et al., 2015</a>).</p>
+<h3>Risks</h3>
+<div class="tablewrap"><table><thead><tr><th>Complication</th><th>Rate</th><th>Note</th></tr></thead><tbody><tr><td>Any complication</td><td><span class="num">14.1%</span><div class="bar"><i style="width:28%"></i></div></td><td>95% CI 10.1–18.2; 15.6% perioperative and 4.4% delayed in the North American cohort</td></tr><tr><td>Axial neck pain</td><td><span class="num">5.6%</span><div class="bar"><i style="width:11%"></i></div></td><td>Commonest after posterior surgery</td></tr><tr><td>Cardiopulmonary events</td><td><span class="num">3.3%</span><div class="bar"><i style="width:7%"></i></div></td><td>Mostly minor</td></tr><tr><td>Dysphagia or laryngeal nerve injury</td><td><span class="num">2.2%</span><div class="bar"><i style="width:4%"></i></div></td><td>Anterior approach; usually temporary</td></tr><tr><td>Instrumentation or graft problem</td><td><span class="num">2.0%</span><div class="bar"><i style="width:4%"></i></div></td><td></td></tr><tr><td><span class="t" data-g="c5palsy">C5 palsy</span></td><td><span class="num">1.9%</span><div class="bar"><i style="width:4%"></i></div></td><td>Shoulder and elbow weakness appearing days after surgery; usually recovers</td></tr><tr><td><span class="t" data-g="pseudarthrosis">Pseudarthrosis</span></td><td><span class="num">1.8%</span><div class="bar"><i style="width:4%"></i></div></td><td>Failed fusion</td></tr><tr><td>Infection</td><td><span class="num">1.5%</span><div class="bar"><i style="width:3%"></i></div></td><td>Superficial wound infection 4.7% posterior versus 0.6% anterior</td></tr><tr><td><span class="t" data-g="adjacentsegment">Adjacent segment disease</span></td><td><span class="num">1.5%</span><div class="bar"><i style="width:3%"></i></div></td><td>Late</td></tr><tr><td>Reoperation</td><td><span class="num">1.4%</span><div class="bar"><i style="width:3%"></i></div></td><td></td></tr><tr><td>Worsened myelopathy</td><td><span class="num">1.3%</span><div class="bar"><i style="width:3%"></i></div></td><td>Perioperative, in the North American cohort</td></tr><tr><td>Death</td><td><span class="num">0.3%</span><div class="bar"><i style="width:1%"></i></div></td><td></td></tr></tbody></table></div><p class="tablenote">Complications of decompressive surgery for degenerative cervical myelopathy. Pooled cumulative incidence from the guideline's systematic review (<a class="ext" href="https://doi.org/10.1177/2192568217710137">Fehlings et al., 2017a</a>); approach-specific figures from the 302-patient AO Spine North America cohort (<a class="ext" href="https://doi.org/10.3171/2012.1.SPINE11467">Fehlings et al., 2012</a>).</p>
+<p>Overall complication rates in the North American cohort were 11% after anterior-only and 19% after posterior-only surgery, and older age, longer operations, and combined front-and-back procedures raised the risk (<a class="ext" href="https://doi.org/10.3171/2012.1.SPINE11467">Fehlings et al., 2012</a>). The guideline's cost-effectiveness review, based on a Canadian cohort followed for 2 years and modeled over a lifetime, found surgery cost about CAD 11,500 per <span class="t" data-g="qaly">quality-adjusted life year</span> gained, or about CAD 20,500 under the conservative assumption that unoperated patients would never decline; both are well within conventional willingness-to-pay thresholds (<a class="ext" href="https://doi.org/10.1016/j.spinee.2016.10.015">Witiw et al., 2017</a>; <a class="ext" href="https://doi.org/10.1177/2192568217701914">Fehlings et al., 2017b</a>).</p>
+  </div>
+</section>
+<section class="block" id="prognosis">
+  <div class="wrap">
+    <p class="sec-eyebrow">Prognosis</p>
+    <h2>Recovery is real but partial, and time-limited</h2>
+<p>Most patients improve after surgery and nearly all stop declining, but few return to normal. Alongside the average gains above, surgical cohort data cited by <a class="ext" href="https://doi.org/10.1126/scitranslmed.aac6524">Karadimas et al. (2015)</a> put the share of patients still substantially impaired 6 months after decompression at 44%, with 9.3% having declined. The research community's own summary is that surgery offers most patients meaningful benefit, that few make a full recovery, and that the condition carries among the worst quality-of-life scores of any chronic disease, with high levels of dependence and unemployment (<a class="ext" href="https://doi.org/10.1177/21925682211035379">Davies et al., 2022</a>). Residual problems commonly include falls, reduced mobility, incontinence, pain, depression, and poor sleep (<a class="ext" href="https://doi.org/10.1136/bmj.k186">Davies et al., 2018</a>).</p>
+<p>The predictors of a poorer outcome are the ones this briefing has already met: more severe disease at presentation, longer duration of symptoms, and <span class="t" data-g="mri">MRI</span> evidence of established tissue loss, particularly T1 change combined with T2 change (<a class="ext" href="https://doi.org/10.1093/neuros/nyy474">Tetreault et al., 2019</a>; <a class="ext" href="https://doi.org/10.1097/BRS.0b013e3182a7eae0">Tetreault et al., 2013</a>). Because these are largely consequences of delay, prognosis is to a large extent a function of how quickly the diagnosis was made. The survey evidence that longer delays go with greater disability, dependence, and unemployment makes the same point from the patient's side (<a class="ext" href="https://doi.org/10.1097/BRS.0000000000003305">Pope et al., 2020b</a>).</p>
+<p>Living with the condition after surgery means managing what remains. Neuropathic pain and <span class="t" data-g="spasticity">spasticity</span> are treated with medication, balance and hand function with rehabilitation, and the neck itself with sensible activity; the value of <span class="t" data-g="nonop">structured rehabilitation</span> after surgery is one of the ten research priorities precisely because it has been so little studied (<a class="ext" href="https://doi.org/10.1177/21925682211035379">Davies et al., 2022</a>). The patient charity Myelopathy.org, a registered charity in England and Wales, runs the largest international community for people with DCM and their carers and co-leads the research program described below.</p>
+  </div>
+</section>
+<section class="block" id="debates">
+  <div class="wrap">
+    <p class="sec-eyebrow">Debates and outlook</p>
+    <h2>Open questions, live controversies, and what is coming</h2>
+<p>The field organized its uncertainties in 2019 through <span class="t" data-g="recodedcm">AO Spine RECODE-DCM</span>, a partnership of surgeons, other clinicians, and people living with the condition from 68 countries, which used a <span class="t" data-g="jla">James Lind Alliance priority setting partnership</span> to rank the ten research questions that matter most (<a class="ext" href="https://doi.org/10.1177/21925682211035379">Davies et al., 2022</a>). The list is a fair map of where the evidence is missing: awareness, <span class="t" data-g="naturalhistory">natural history</span>, diagnostic criteria, assessment tools, the biological basis of injury, perioperative rehabilitation, novel therapies, socioeconomic impact, dynamic imaging and neurophysiology, and individualizing surgery. The same initiative produced the unifying name and definition and, in 2024, a core outcome set and minimum data set for future trials (<a class="ext" href="https://doi.org/10.1177/21925682221111780">Davies et al., 2024a</a>; <a class="ext" href="https://doi.org/10.1371/journal.pmed.1004447">Davies et al., 2024b</a>).</p>
+<p><strong>Whom to operate on, and when.</strong> The mild-disease question described above is the central controversy in practice. The 2017 guideline's weak recommendation, the null randomized trial, the favorable cohort data, the 2025 conditional recommendation for surgery, and the wide variation in what surgeons actually do are all consistent with genuine equipoise (<a class="ext" href="https://doi.org/10.1177/2192568217701914">Fehlings et al., 2017b</a>; <a class="ext" href="https://doi.org/10.1007/s00586-011-1811-9">Kadaňka et al., 2011</a>; <a class="ext" href="https://doi.org/10.1093/neuros/nyy133">Badhiwala et al., 2019</a>; <a class="ext" href="https://doi.org/10.1177/21925682251331050">Fehlings et al., 2025</a>; <a class="ext" href="https://doi.org/10.1038/s41393-023-00945-8">Brannigan et al., 2024</a>). Trials that randomize mild disease with better outcome measures are the obvious next step, and identifying which mild patients are on a downward trajectory is a stated priority.</p>
+<p><strong>Measuring what matters.</strong> The <span class="t" data-g="mjoa">mJOA</span> is the field's common currency and a poor one: its ceiling hides change in mild disease, its steps are not equal, and it ignores pain, which patients rank highly (<a class="ext" href="https://doi.org/10.1097/BRS.0000000000001127">Tetreault et al., 2015</a>; <a class="ext" href="https://doi.org/10.1097/BRS.0000000000000648">Kopjar et al., 2015</a>). The <span class="t" data-g="riluzole">riluzole</span> trial's authors concluded that the scale was too insensitive to detect a drug effect (<a class="ext" href="https://doi.org/10.1016/S1474-4422(20)30407-5">Fehlings et al., 2021</a>). The 2024 core outcome set is the field's answer, and a 2025 AO Spine review argues for multidimensional assessment including pain, quality of life, frailty, and imaging (<a class="ext" href="https://doi.org/10.1371/journal.pmed.1004447">Davies et al., 2024b</a>; <a class="ext" href="https://doi.org/10.1177/21925682251331050">Fehlings et al., 2025</a>).</p>
+<p><strong>Neuroprotection.</strong> Riluzole, which protected the cord in animal models, was tested in 290 patients undergoing decompression in the CSM-Protect trial: the change in mJOA at 6 months was 2.45 points with riluzole and 2.83 with placebo (difference −0.38, 95% CI −0.90 to 0.13), a null result on the primary outcome, with a signal of less neck pain in secondary analyses (<a class="ext" href="https://doi.org/10.1016/S1474-4422(20)30407-5">Fehlings et al., 2021</a>). The anti-inflammatory drug <span class="t" data-g="ibudilast">ibudilast</span> is being tested as an add-on to surgery in the UK RECEDE-Myelopathy trial, with pain and mJOA at 6 months as co-primary endpoints (<a class="ext" href="https://doi.org/10.1136/bmjopen-2022-061294">Davies et al., 2023</a>); when this briefing was compiled the trial registry still listed it as recruiting and no results had been published.</p>
+<p><strong>Seeing injury before it is felt.</strong> <span class="t" data-g="qmri">Quantitative MRI</span> measures cord area, <span class="t" data-g="dti">diffusion</span> along fibers, and myelin content directly. In a longitudinal study of 26 nonoperative patients, such measures flagged progression in 68% over about 13 months, against 11.5% by mJOA and 42% by the patients' own impression, suggesting that behavioral adaptation masks ongoing tissue injury (<a class="ext" href="https://doi.org/10.1371/journal.pone.0195733">Martin et al., 2018</a>). The 2025 AO Spine appraisal conditionally recommends diffusion-weighted signal change for judging prognosis after surgery (<a class="ext" href="https://doi.org/10.1177/21925682251331050">Fehlings et al., 2025</a>). Whether these tools can decide who with silent compression should be operated on is the practical question.</p>
+<p><strong>Counting the undiagnosed.</strong> The twelvefold gap between modeled and recorded <span class="t" data-g="prevalence">prevalence</span>, concentrated in the elderly, implies a large population living with a treatable cause of falls, incontinence, and dependence that is being attributed to age (<a class="ext" href="https://doi.org/10.1007/s00415-022-11349-8">Grodzinski et al., 2023</a>). Diagnostic criteria, screening tools for primary care, and a dedicated diagnostic code are the prerequisites for closing it (<a class="ext" href="https://doi.org/10.1177/21925682211030871">Hilton et al., 2022</a>; <a class="ext" href="https://doi.org/10.1097/BRS.0000000000000913">Nouri et al., 2015</a>), and the evidence that delays fall unequally on Black patients makes this a matter of equity as well as efficiency (<a class="ext" href="https://doi.org/10.1097/BRS.0000000000003305">Pope et al., 2020b</a>).</p>
+  </div>
+</section>
+<section class="block" id="sources">
+  <div class="wrap">
+    <p class="sec-eyebrow">Sources &amp; further reading</p>
+    <h2>Where these claims come from</h2>
+<p>Every number in this briefing traces to one of the works below. The clinical guideline, the AO Spine cohort studies, and the Cambridge group's epidemiological and diagnostic work carry most of the weight; the accessible reviews are the best places to start reading, and the tools section lists what a clinician or patient would actually use.</p>
+<h3>Key primary literature</h3><ol class="refs"><li>Badhiwala, J.H., Witiw, C.D., Nassiri, F., et al. (2019). Efficacy and Safety of Surgery for Mild Degenerative Cervical Myelopathy: Results of the AOSpine North America and International Prospective Multicenter Studies. <span class="j">Neurosurgery, 84(4), 890-897</span>. <a class="ext" href="https://doi.org/10.1093/neuros/nyy133">DOI</a> Baseline impairment and 2-year surgical outcomes in 193 patients with mild disease.</li><li>Bajwa, N.S., Toy, J.O., Young, E.Y., et al. (2012). Establishment of parameters for congenital stenosis of the cervical spine: an anatomic descriptive analysis of 1066 cadaveric specimens. <span class="j">European Spine Journal, 21(12), 2467-2474</span>. <a class="ext" href="https://doi.org/10.1007/s00586-012-2437-2">DOI</a> Cadaveric definition of congenital cervical stenosis; the 13 mm threshold.</li><li>Bednarik, J., Kadanka, Z., Dusek, L., et al. (2008). Presymptomatic spondylotic cervical myelopathy: an updated predictive model. <span class="j">European Spine Journal, 17(3), 421-431</span>. <a class="ext" href="https://doi.org/10.1007/s00586-008-0585-1">DOI</a> The 199-patient prospective cohort behind the 8% at 1 year and 22.6% at 44 months conversion figures.</li><li>Behrbalk, E., Salame, K., Regev, G.J., et al. (2013). Delayed diagnosis of cervical spondylotic myelopathy by primary care physicians. <span class="j">Neurosurgical Focus, 35(1), E1</span>. <a class="ext" href="https://doi.org/10.3171/2013.3.FOCUS1374">DOI</a> Forty-two surgical patients: 2.2 years and 5.2 physician visits to diagnosis; 43% first labeled carpal tunnel syndrome.</li><li>Benzel, E.C., Lancon, J., Kesterson, L., et al. (1991). Cervical Laminectomy and Dentate Ligament Section for Cervical Spondylotic Myelopathy. <span class="j">Journal of Spinal Disorders, 4(3), 286-295</span>. <a class="ext" href="https://doi.org/10.1097/00002517-199109000-00005">DOI</a> Origin of the modified JOA scale used throughout the literature.</li><li>Boogaarts, H.D. and Bartels, R.H.M.A. (2015). Prevalence of cervical spondylotic myelopathy. <span class="j">European Spine Journal, 24(Suppl 2), 139-141</span>. <a class="ext" href="https://doi.org/10.1007/s00586-013-2781-x">DOI</a> Surgically treated prevalence of 1.6 per 100,000 in a Dutch catchment; explicitly a minimum.</li><li>Brannigan, J.F.M., Davies, B.M., Mowforth, O.D., et al. (2024). Management of mild degenerative cervical myelopathy and asymptomatic spinal cord compression: an international survey. <span class="j">Spinal Cord, 62(2), 51-58</span>. <a class="ext" href="https://doi.org/10.1038/s41393-023-00945-8">DOI</a> Survey of 699 spine professionals on how mild disease and silent compression are actually managed.</li><li>Chen, L.F., Tu, T.H., Chen, Y.C., et al. (2016). Risk of spinal cord injury in patients with cervical spondylotic myelopathy and ossification of posterior longitudinal ligament: a national cohort study. <span class="j">Neurosurgical Focus, 40(6), E4</span>. <a class="ext" href="https://doi.org/10.3171/2016.3.FOCUS1663">DOI</a> Taiwanese national cohort: spinal cord injury rates in operated and unoperated patients with and without OPLL.</li><li>Davies, B., Mowforth, O.D., Yordanov, S., et al. (2023). Targeting patient recovery priorities in degenerative cervical myelopathy: design and rationale for the RECEDE-Myelopathy trial—study protocol. <span class="j">BMJ Open, 13(3), e061294</span>. <a class="ext" href="https://doi.org/10.1136/bmjopen-2022-061294">DOI</a> · <a class="ext" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10008337/">Free full text</a> Protocol of the RECEDE-Myelopathy trial of ibudilast as an adjunct to surgery.</li><li>Fehlings, M.G., Smith, J.S., Kopjar, B., et al. (2012). Perioperative and delayed complications associated with the surgical treatment of cervical spondylotic myelopathy based on 302 patients from the AOSpine North America Cervical Spondylotic Myelopathy Study. <span class="j">Journal of Neurosurgery: Spine, 16(5), 425-432</span>. <a class="ext" href="https://doi.org/10.3171/2012.1.SPINE11467">DOI</a> Perioperative and delayed complications in 302 surgical patients, by approach.</li><li>Fehlings, M.G., Ibrahim, A., Tetreault, L., et al. (2015). A Global Perspective on the Outcomes of Surgical Decompression in Patients With Cervical Spondylotic Myelopathy. <span class="j">Spine, 40(17), 1322-1328</span>. <a class="ext" href="https://doi.org/10.1097/BRS.0000000000000988">DOI</a> The 479-patient international AO Spine cohort: demographics and 2-year outcomes of surgery.</li><li>Fehlings, M.G., Tetreault, L.A., Kurpad, S., et al. (2017). Change in Functional Impairment, Disability, and Quality of Life Following Operative Treatment for Degenerative Cervical Myelopathy: A Systematic Review and Meta-Analysis. <span class="j">Global Spine Journal, 7(3 Suppl), 53S-69S</span>. <a class="ext" href="https://doi.org/10.1177/2192568217710137">DOI</a> · <a class="ext" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5684851/">Free full text</a> Pooled surgical outcomes by severity and pooled complication rates; the source of the outcome and complication tables here.</li><li>Fehlings, M.G., Badhiwala, J.H., Ahn, H., et al. (2021). Safety and efficacy of riluzole in patients undergoing decompressive surgery for degenerative cervical myelopathy (CSM-Protect): a multicentre, double-blind, placebo-controlled, randomised, phase 3 trial. <span class="j">The Lancet Neurology, 20(2), 98-106</span>. <a class="ext" href="https://doi.org/10.1016/S1474-4422(20)30407-5">DOI</a> The CSM-Protect phase 3 trial of riluzole around decompression: null on the primary mJOA outcome.</li><li>Ghogawala, Z., Terrin, N., Dunbar, M.R., et al. (2021). Effect of Ventral vs Dorsal Spinal Surgery on Patient-Reported Physical Functioning in Patients With Cervical Spondylotic Myelopathy. <span class="j">JAMA, 325(10), 942-951</span>. <a class="ext" href="https://doi.org/10.1001/jama.2021.1233">DOI</a> The CSM-S randomized trial of ventral versus dorsal surgery: equal function at 1 year, different complications.</li><li>Grodzinski, B., Stubbs, D.J., Davies, B.M. (2023). Most degenerative cervical myelopathy remains undiagnosed, particularly amongst the elderly: modelling the prevalence of degenerative cervical myelopathy in the United Kingdom. <span class="j">Journal of Neurology, 270(1), 311-319</span>. <a class="ext" href="https://doi.org/10.1007/s00415-022-11349-8">DOI</a> · <a class="ext" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9813047/">Free full text</a> Compares hospital-recorded with compression-derived prevalence in the UK by age; supports the claim that most cases, especially in the elderly, go undiagnosed.</li><li>Hilton, B., Tempest-Mitchell, J., Davies, B., et al. (2019). Route to diagnosis of degenerative cervical myelopathy in a UK healthcare system: a retrospective cohort study. <span class="j">BMJ Open, 9(5), e027000</span>. <a class="ext" href="https://doi.org/10.1136/bmjopen-2018-027000">DOI</a> · <a class="ext" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6501948/">Free full text</a> Reconstructs the route to diagnosis for 43 UK patients; the source of the timeline figure.</li><li>Jiang, Z., Davies, B., Zipser, C., et al. (2024). The value of Clinical signs in the diagnosis of Degenerative Cervical Myelopathy - A Systematic review and Meta-analysis. <span class="j">Global Spine Journal, 14(4), 1369-1394</span>. <a class="ext" href="https://doi.org/10.1177/21925682231209869">DOI</a> · <a class="ext" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11289551/">Free full text</a> Systematic review and meta-analysis of the diagnostic value of clinical signs; the source of the sensitivity and specificity table.</li><li>Jiang, Z., Davies, B., Zipser, C., et al. (2024). The Frequency of Symptoms in Patients With a Diagnosis of Degenerative Cervical Myelopathy: Results of a Scoping Review. <span class="j">Global Spine Journal, 14(4), 1395-1421</span>. <a class="ext" href="https://doi.org/10.1177/21925682231210468">DOI</a> · <a class="ext" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11289544/">Free full text</a> Scoping review of symptom frequencies across 61 studies; the source of the symptom table.</li><li>Kadanka, Z., Adamova, B., Kerkovsky, M., et al. (2017). Predictors of symptomatic myelopathy in degenerative cervical spinal cord compression. <span class="j">Brain and Behavior, 7(9), e00797</span>. <a class="ext" href="https://doi.org/10.1002/brb3.797">DOI</a> · <a class="ext" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5607559/">Free full text</a> Prospective cohort of 112 people with silent compression: 13.4% converted; radiculopathy and MRI cord area and compression ratio predicted it.</li><li>Kadaňka, Z., Bednařík, J., Novotný, O., et al. (2011). Cervical spondylotic myelopathy: conservative versus surgical treatment after 10 years. <span class="j">European Spine Journal, 20(9), 1533-1538</span>. <a class="ext" href="https://doi.org/10.1007/s00586-011-1811-9">DOI</a> · <a class="ext" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3175900/">Free full text</a> The only randomized trial of surgery versus conservative care, in mild to moderate disease: no difference at 10 years.</li><li>Karadimas, S.K., Laliberte, A.M., Tetreault, L., et al. (2015). Riluzole blocks perioperative ischemia-reperfusion injury and enhances postdecompression outcomes in cervical spondylotic myelopathy. <span class="j">Science Translational Medicine, 7(316), 316ra194</span>. <a class="ext" href="https://doi.org/10.1126/scitranslmed.aac6524">DOI</a> Animal evidence for ischemia-reperfusion injury after decompression and its prevention by riluzole; reports the 9.3% postoperative decline figure.</li><li>Kopjar, B., Tetreault, L., Kalsi-Ryan, S., et al. (2015). Psychometric Properties of the Modified Japanese Orthopaedic Association Scale in Patients With Cervical Spondylotic Myelopathy. <span class="j">Spine, 40(1), E23-E28</span>. <a class="ext" href="https://doi.org/10.1097/BRS.0000000000000648">DOI</a> Psychometric properties of the mJOA: moderate internal consistency, bladder item measures a separate dimension.</li><li>Martin, A.R., De Leener, B., Cohen-Adad, J., et al. (2018). Monitoring for myelopathic progression with multiparametric quantitative MRI. <span class="j">PLOS ONE, 13(4), e0195733</span>. <a class="ext" href="https://doi.org/10.1371/journal.pone.0195733">DOI</a> Quantitative MRI detected progression in nonoperative patients far more often than the mJOA.</li><li>Munro, C.F., Yurac, R., Moritz, Z.C., et al. (2023). Targeting earlier diagnosis: What symptoms come first in Degenerative Cervical Myelopathy?. <span class="j">PLOS ONE, 18(3), e0281856</span>. <a class="ext" href="https://doi.org/10.1371/journal.pone.0281856">DOI</a> Patient survey of which symptoms come first and which are associated with early diagnosis.</li><li>Nurick, S. (1972). The pathogenesis of the spinal cord disorder associated with cervical spondylosis. <span class="j">Brain, 95(1), 87-100</span>. <a class="ext" href="https://doi.org/10.1093/brain/95.1.87">DOI</a> Origin of the Nurick gait-based grading of cervical myelopathy.</li><li>Pope, D.H., Davies, B.M., Mowforth, O.D., et al. (2020). Genetics of Degenerative Cervical Myelopathy: A Systematic Review and Meta-Analysis of Candidate Gene Studies. <span class="j">Journal of Clinical Medicine, 9(1), 282</span>. <a class="ext" href="https://doi.org/10.3390/jcm9010282">DOI</a> · <a class="ext" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7019856/">Free full text</a> Systematic review of candidate-gene studies: 28 genes implicated, evidence limited.</li><li>Pope, D.H., Mowforth, O.D., Davies, B.M., et al. (2020). Diagnostic Delays Lead to Greater Disability in Degenerative Cervical Myelopathy and Represent a Health Inequality. <span class="j">Spine, 45(6), 368-377</span>. <a class="ext" href="https://doi.org/10.1097/BRS.0000000000003305">DOI</a> Survey of 778 patients: typical delay 1 to 2 years, longer delays linked to disability and unemployment, and to Black ethnicity.</li><li>Radcliff, K.E., Curry, E.P., Trimba, R., et al. (2016). High Incidence of Undiagnosed Cervical Myelopathy in Patients With Hip Fracture Compared With Controls. <span class="j">Journal of Orthopaedic Trauma, 30(4), 189-193</span>. <a class="ext" href="https://doi.org/10.1097/BOT.0000000000000485">DOI</a> 18% of cognitively intact hip-fracture patients had undiagnosed cervical myelopathy, versus none of the controls.</li><li>Rhee, J.M., Heflin, J.A., Hamasaki, T., et al. (2009). Prevalence of Physical Signs in Cervical Myelopathy. <span class="j">Spine, 34(9), 890-895</span>. <a class="ext" href="https://doi.org/10.1097/BRS.0b013e31819c944b">DOI</a> Prospective controlled study of examination signs; 21% of surgically confirmed patients had none.</li><li>Rhee, J.M., Shamji, M.F., Erwin, W.M., et al. (2013). Nonoperative Management of Cervical Myelopathy. <span class="j">Spine, 38(22 Suppl 1), S55-S67</span>. <a class="ext" href="https://doi.org/10.1097/BRS.0b013e3182a7f41d">DOI</a> Systematic review of nonoperative management: little evidence, none of benefit for moderate or severe disease.</li><li>Smith, S.S., Stewart, M.E., Davies, B.M., et al. (2021). The Prevalence of Asymptomatic and Symptomatic Spinal Cord Compression on Magnetic Resonance Imaging: A Systematic Review and Meta-analysis. <span class="j">Global Spine Journal, 11(4), 597-607</span>. <a class="ext" href="https://doi.org/10.1177/2192568220934496">DOI</a> · <a class="ext" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8119927/">Free full text</a> Meta-analysis of MRI cord compression in healthy and symptomatic populations, by age and region; the source of the 24%, 35%, and 2.3% figures.</li><li>Tetreault, L.A., Dettori, J.R., Wilson, J.R., et al. (2013). Systematic Review of Magnetic Resonance Imaging Characteristics That Affect Treatment Decision Making and Predict Clinical Outcome in Patients With Cervical Spondylotic Myelopathy. <span class="j">Spine, 38(22 Suppl 1), S89-S110</span>. <a class="ext" href="https://doi.org/10.1097/BRS.0b013e3182a7eae0">DOI</a> Which MRI features predict surgical outcome: combined T1 and T2 change and the number of bright segments do; the T2 grade alone does not.</li><li>Tetreault, L., Nouri, A., Kopjar, B., et al. (2015). The Minimum Clinically Important Difference of the Modified Japanese Orthopaedic Association Scale in Patients with Degenerative Cervical Myelopathy. <span class="j">Spine, 40(21), 1653-1659</span>. <a class="ext" href="https://doi.org/10.1097/BRS.0000000000001127">DOI</a> Minimum clinically important difference of the mJOA by severity (1, 2, and 3 points).</li><li>Tetreault, L., Kopjar, B., Nouri, A., et al. (2017). The modified Japanese Orthopaedic Association scale: establishing criteria for mild, moderate and severe impairment in patients with degenerative cervical myelopathy. <span class="j">European Spine Journal, 26(1), 78-84</span>. <a class="ext" href="https://doi.org/10.1007/s00586-016-4660-8">DOI</a> Defines mild, moderate, and severe disease on the mJOA from 757 patients.</li><li>Tetreault, L., Wilson, J.R., Kotter, M.R.N., et al. (2019). Is Preoperative Duration of Symptoms a Significant Predictor of Functional Outcomes in Patients Undergoing Surgery for the Treatment of Degenerative Cervical Myelopathy?. <span class="j">Neurosurgery, 85(5), 642-647</span>. <a class="ext" href="https://doi.org/10.1093/neuros/nyy474">DOI</a> Duration of symptoms and outcome in 757 patients: better results when operated within 4 months.</li><li>Wilson, J.R., Barry, S., Fischer, D.J., et al. (2013). Frequency, Timing, and Predictors of Neurological Dysfunction in the Nonmyelopathic Patient With Cervical Spinal Cord Compression, Canal Stenosis, and/or Ossification of the Posterior Longitudinal Ligament. <span class="j">Spine, 38(22 Suppl 1), S37-S54</span>. <a class="ext" href="https://doi.org/10.1097/BRS.0b013e3182a7f2e7">DOI</a> Systematic review of how often and when silent cord compression becomes myelopathy, and what predicts it.</li><li>Witiw, C.D., Tetreault, L.A., Smieliauskas, F., et al. (2017). Surgery for degenerative cervical myelopathy: a patient-centered quality of life and health economic evaluation. <span class="j">The Spine Journal, 17(1), 15-25</span>. <a class="ext" href="https://doi.org/10.1016/j.spinee.2016.10.015">DOI</a> Lifetime cost-utility of surgery in a Canadian cohort; the source of the cost per QALY figures.</li><li>Wu, J.C., Ko, C.C., Yen, Y.S., et al. (2013). Epidemiology of cervical spondylotic myelopathy and its risk of causing spinal cord injury: a national cohort study. <span class="j">Neurosurgical Focus, 35(1), E10</span>. <a class="ext" href="https://doi.org/10.3171/2013.4.FOCUS13122">DOI</a> Taiwan national cohort: hospitalization incidence 4.04 per 100,000 person-years and the raised risk of spinal cord injury in unoperated patients.</li><li>Yu, W.R., Liu, T., Kiehl, T.R., et al. (2011). Human neuropathological and animal model evidence supporting a role for Fas-mediated apoptosis and inflammation in cervical spondylotic myelopathy. <span class="j">Brain, 134(5), 1277-1292</span>. <a class="ext" href="https://doi.org/10.1093/brain/awr054">DOI</a> Human autopsy and animal evidence for Fas-mediated cell death and inflammation in compressed cords.</li></ol>
+<h3>Reviews, guidelines, and accessible explainers</h3><ul class="refs"><li>Akter, F., Yu, X., Qin, X., et al. (2020). The Pathophysiology of Degenerative Cervical Myelopathy and the Physiology of Recovery Following Decompression. <span class="j">Frontiers in Neuroscience, 14, 138</span>. <a class="ext" href="https://doi.org/10.3389/fnins.2020.00138">DOI</a> Systematic review of the pathophysiology of chronic compression and of recovery after decompression. Open access.</li><li>Badhiwala, J.H., Ahuja, C.S., Akbar, M.A., et al. (2020). Degenerative cervical myelopathy — update and future directions. <span class="j">Nature Reviews Neurology, 16(2), 108-124</span>. <a class="ext" href="https://doi.org/10.1038/s41582-019-0303-0">DOI</a> Comprehensive, evidence-based review of definition, pathophysiology, diagnosis, and management. Subscription journal.</li><li>Davies, B.M., Mowforth, O.D., Smith, E.K., et al. (2018). Degenerative cervical myelopathy. <span class="j">BMJ, 360, k186</span>. <a class="ext" href="https://doi.org/10.1136/bmj.k186">DOI</a> · <a class="ext" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6074604/">Free full text</a> Short clinical review for generalists: who to suspect, what to examine, why the scan and the patient disagree, and what surgery achieves.</li><li>Davies, B.M., Kwon, B.K., Fehlings, M.G., et al. (2022). AO Spine RECODE-DCM: Why Prioritize Research in Degenerative Cervical Myelopathy?. <span class="j">Global Spine Journal, 12(1 Suppl), 5S-7S</span>. <a class="ext" href="https://doi.org/10.1177/21925682211035379">DOI</a> Introduces the RECODE-DCM priority-setting partnership and the ten research priorities.</li><li>Davies, B.M., Khan, D.Z., Barzangi, K., et al. (2024). We Choose to Call it ‘Degenerative Cervical Myelopathy’: Findings of AO Spine RECODE-DCM, an International and Multi-Stakeholder Partnership to Agree a Standard Unifying Term and Definition for a Disease. <span class="j">Global Spine Journal, 14(2), 503-512</span>. <a class="ext" href="https://doi.org/10.1177/21925682221111780">DOI</a> The consensus process that chose the name and the one-line definition used in this briefing.</li><li>Davies, B.M., Yang, X., Khan, D.Z., et al. (2024). A minimum data set—Core outcome set, core data elements, and core measurement set—For degenerative cervical myelopathy research (AO Spine RECODE DCM): A consensus study. <span class="j">PLOS Medicine, 21(8), e1004447</span>. <a class="ext" href="https://doi.org/10.1371/journal.pmed.1004447">DOI</a> · <a class="ext" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11379399/">Free full text</a> The core outcome set and minimum data set for DCM research; also the source of the '1 in 50 adults' phrasing.</li><li>Fehlings, M.G., Tetreault, L.A., Riew, K.D., et al. (2017). A Clinical Practice Guideline for the Management of Patients With Degenerative Cervical Myelopathy: Recommendations for Patients With Mild, Moderate, and Severe Disease and Nonmyelopathic Patients With Evidence of Cord Compression. <span class="j">Global Spine Journal, 7(3 Suppl), 70S-83S</span>. <a class="ext" href="https://doi.org/10.1177/2192568217701914">DOI</a> · <a class="ext" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5684840/">Free full text</a> The AO Spine and CSRS guideline: four graded recommendations by severity, with the systematic reviews behind them. The single most useful document on management.</li><li>Fehlings, M.G., Evaniew, N., Ter Wengel, P.V., et al. (2025). AO Spine Clinical Practice Recommendations for Diagnosis and Management of Degenerative Cervical Myelopathy: Evidence Based Decision Making - A Review of Cutting Edge Recent Literature Related to Degenerative Cervical Myelopathy. <span class="j">Global Spine Journal, 15(5), 2585-2593</span>. <a class="ext" href="https://doi.org/10.1177/21925682251331050">DOI</a> · <a class="ext" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12012498/">Free full text</a> 2025 AO Spine appraisal of recent evidence: conditional support for surgery in mild disease and for diffusion MRI in prognosis.</li><li>Hilton, B., Gardner, E.L., Jiang, Z., et al. (2022). Establishing Diagnostic Criteria for Degenerative Cervical Myelopathy [AO Spine RECODE-DCM Research Priority Number 3]. <span class="j">Global Spine Journal, 12(1 Suppl), 55S-63S</span>. <a class="ext" href="https://doi.org/10.1177/21925682211030871">DOI</a> · <a class="ext" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8859706/">Free full text</a> Why DCM lacks diagnostic criteria and how the field proposes to develop them.</li><li>Karadimas, S.K., Erwin, W.M., Ely, C.G., et al. (2013). Pathophysiology and Natural History of Cervical Spondylotic Myelopathy. <span class="j">Spine, 38(22 Suppl 1), S21-S36</span>. <a class="ext" href="https://doi.org/10.1097/BRS.0b013e3182a7f2c3">DOI</a> Pathophysiology of chronic compression and a systematic review of natural history: 20 to 60% deteriorate without surgery.</li><li>Klumb, S., Haley, L., Hathaway, C., et al. (2025). Degenerative Cervical Myelopathy Diagnosis and Its Differentiation from Neurological Mimics, MS and ALS: A Literature Review. <span class="j">Journal of Clinical Medicine, 14(24), 8711</span>. <a class="ext" href="https://doi.org/10.3390/jcm14248711">DOI</a> · <a class="ext" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12734025/">Free full text</a> Recent review of how DCM is distinguished from multiple sclerosis, ALS, and other mimics, with misdiagnosis rates.</li><li>Margetis, K. and Donnally, C.J. (2025). Cervical Myelopathy. In <span class="j">StatPearls</span>. StatPearls Publishing; Updated August 2, 2025. <a class="ext" href="https://www.ncbi.nlm.nih.gov/books/NBK482312/">Free full text</a> Free reference chapter with the full mJOA and Nurick scales and how each examination sign is performed.</li><li>Matsunaga, S. and Sakou, T. (2012). Ossification of the Posterior Longitudinal Ligament of the Cervical Spine. <span class="j">Spine, 37(5), E309-E314</span>. <a class="ext" href="https://doi.org/10.1097/BRS.0b013e318241ad33">DOI</a> Etiology and natural history of OPLL from the Japanese investigation committee; prevalence in Japan.</li><li>McCormick, J.R., Sama, A.J., Schiller, N.C., et al. (2020). Cervical Spondylotic Myelopathy: A Guide to Diagnosis and Management. <span class="j">The Journal of the American Board of Family
+                Medicine, 33(2), 303-313</span>. <a class="ext" href="https://doi.org/10.3122/jabfm.2020.02.190195">DOI</a> Free primary-care review covering examination, imaging, surgical options, and what to avoid nonoperatively.</li><li>Milligan, J., Ryan, K., Fehlings, M., et al. (2019). Degenerative cervical myelopathy: Diagnosis and management in primary care. <span class="j">Canadian Family Physician, 65(9), 619-624</span>. <a class="ext" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6741789/">Free full text</a> Free primary-care review from the Canadian Family Physician; stepwise course and when to refer.</li><li>Nouri, A., Tetreault, L., Singh, A., et al. (2015). Degenerative Cervical Myelopathy. <span class="j">Spine, 40(12), E675-E693</span>. <a class="ext" href="https://doi.org/10.1097/BRS.0000000000000913">DOI</a> The paper that proposed the umbrella term; epidemiology (minimum incidence and prevalence), genetics, and pathogenesis.</li><li>Nouri, A., Tessitore, E., Molliqaj, G., et al. (2022). Degenerative Cervical Myelopathy: Development and Natural History [AO Spine RECODE-DCM Research Priority Number 2]. <span class="j">Global Spine Journal, 12(1 Suppl), 39S-54S</span>. <a class="ext" href="https://doi.org/10.1177/21925682211036071">DOI</a> · <a class="ext" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8859703/">Free full text</a> RECODE-DCM review of development and natural history, including congenital risk factors and cord-canal mismatch.</li><li>Sakai, K., Yoshii, T., Furuya, T., et al. (2022). Research History, Pathology and Epidemiology of Ossification of the Posterior Longitudinal Ligament and Ligamentum Flavum. <span class="j">Journal of Clinical Medicine, 11(18), 5386</span>. <a class="ext" href="https://doi.org/10.3390/jcm11185386">DOI</a> · <a class="ext" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9503972/">Free full text</a> History, pathology, and epidemiology of ossification of the posterior longitudinal ligament and ligamentum flavum.</li><li>Tetreault, L., Kalsi-Ryan, S., Benjamin Davies, et al. (2022). Degenerative Cervical Myelopathy: A Practical Approach to Diagnosis. <span class="j">Global Spine Journal, 12(8), 1881-1893</span>. <a class="ext" href="https://doi.org/10.1177/21925682211072847">DOI</a> · <a class="ext" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9609530/">Free full text</a> A practical guide to history, examination, imaging, electrophysiology, and the differential diagnosis.</li></ul>
+<h3>Data, tools, and communities</h3><ul class="refs"><li><a class="ext" href="https://www.aofoundation.org/spine/research/recode-dcm/research-priorities">AO Spine RECODE-DCM: research priorities</a>, AO Spine (2026). The ten ranked research priorities for DCM, with links to the minimum data set and the consensus definition.</li><li><a class="ext" href="https://myelopathy.org/">Myelopathy.org: the degenerative cervical myelopathy charity</a>, Myelopathy.org (2026). UK-registered charity (no. 1178673): patient information, an international peer community, clinician resources, and a partner in the RECODE-DCM research program.</li></ul>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <ol class="footnotes">
+      <li id="fn-prompt">The prompt that produced this briefing, verbatim: “I want to learn about degenerative cervical myelopathy in humans.  Use the instructions in github.com/h-bryant/tools/learn-about.md.  Include this prompt in a footnote.” <a class="back" href="#fnref-prompt" aria-label="Back to text">↩</a></li>
+    </ol>
+    <p>Compiled September 2026 from the sources cited above. The evidence base rests on prospective surgical cohorts, systematic reviews, one small randomized trial of surgery versus conservative care, and a single 2017 guideline; population data on prevalence and natural history are sparse and mostly indirect. Educational briefing, not medical advice.</p>
+  </div>
+</footer>
+
+<div id="tip" hidden role="tooltip"></div>
+
+<script type="application/json" id="glossary">
+{
+ "spondylosis": {
+  "term": "spondylosis",
+  "definition": "Age-related wear of the spine: discs lose height and water, bony spurs form at their margins, and joints and ligaments thicken. It is nearly universal after middle age and is the usual cause of the canal narrowing behind degenerative cervical myelopathy."
+ },
+ "csm": {
+  "term": "cervical spondylotic myelopathy (CSM)",
+  "definition": "The older, narrower name for spinal cord injury from spondylosis of the neck. It is now treated as the commonest subtype of degenerative cervical myelopathy, which also covers ligament ossification and congenital narrowing."
+ },
+ "opll": {
+  "term": "ossification of the posterior longitudinal ligament (OPLL)",
+  "definition": "Bone forming inside the ligament that runs down the back of the vertebral bodies, along the front wall of the spinal canal. It narrows the canal from the front, is far more common in East Asian populations, and is one of the causes grouped under degenerative cervical myelopathy."
+ },
+ "ligamentumflavum": {
+  "term": "ligamentum flavum",
+  "definition": "The elastic yellow ligament lining the back wall of the spinal canal between adjacent vertebral arches. When it thickens with age or buckles as the neck extends, it presses on the cord from behind."
+ },
+ "osteophyte": {
+  "term": "osteophyte",
+  "plural": "osteophytes",
+  "definition": "A bony spur that grows at the edge of a degenerating disc or joint. Combined with a bulging disc it forms the disc-osteophyte complex that indents the front of the spinal cord."
+ },
+ "intervertebraldisc": {
+  "term": "intervertebral disc",
+  "definition": "The fibrous cushion between two vertebral bodies. With age it dries, flattens, and bulges backward toward the spinal canal, the first step in most cases of spondylosis."
+ },
+ "spinalcanal": {
+  "term": "spinal canal",
+  "definition": "The bony tunnel formed by the stacked vertebrae, through which the spinal cord runs bathed in cerebrospinal fluid. Its front wall is the vertebral bodies and discs; its back wall is the laminae and ligamentum flavum."
+ },
+ "cordcompression": {
+  "term": "spinal cord compression",
+  "definition": "An MRI finding: something (disc, bone, or ligament) indents or flattens the spinal cord and displaces the fluid around it. Compression is necessary for degenerative cervical myelopathy but is not the same thing: about a quarter of healthy adults have it with no symptoms."
+ },
+ "stenosis": {
+  "term": "cervical stenosis",
+  "definition": "Narrowing of the cervical spinal canal, whether acquired through degeneration or present from birth. A canal narrower than about 13 mm from front to back is usually called congenitally stenotic and leaves little room for later degenerative change."
+ },
+ "torgpavlov": {
+  "term": "Torg–Pavlov ratio",
+  "definition": "The front-to-back diameter of the spinal canal divided by that of the vertebral body at the same level, measured on a side-view X-ray. A ratio below about 0.8 indicates a congenitally narrow canal, independent of X-ray magnification."
+ },
+ "radiculopathy": {
+  "term": "radiculopathy",
+  "definition": "Irritation or compression of a nerve root as it leaves the spinal canal, causing pain, numbness, or weakness in that root's territory in one arm. It is a peripheral nerve problem, not a cord problem, but in someone with cord compression it triples the risk that myelopathy will follow."
+ },
+ "myelopathicsigns": {
+  "term": "upper motor neuron signs",
+  "definition": "Examination findings that point to damage of the motor pathways in the brain or spinal cord rather than the peripheral nerves: brisk reflexes, spasticity, clonus, and pathological reflexes such as the Hoffmann and Babinski signs. In cervical myelopathy they appear below the level of compression."
+ },
+ "lmnsigns": {
+  "term": "lower motor neuron signs",
+  "definition": "Findings of damage to the nerve cells or roots that directly supply muscle: wasting, weakness, reduced reflexes, and fasciculations. In cervical myelopathy they can appear in the arms at the level of compression, while the legs show upper motor neuron signs."
+ },
+ "hyperreflexia": {
+  "term": "hyperreflexia",
+  "definition": "Exaggerated tendon reflexes, such as a knee jerk that is brisker than normal. It is the most sensitive sign of cervical myelopathy but is also common in healthy people, so it supports rather than makes the diagnosis."
+ },
+ "hoffmann": {
+  "term": "Hoffmann sign",
+  "definition": "Flicking the tip of the middle finger downward makes the thumb and index finger flex involuntarily. Present in roughly 60% of people with cervical myelopathy and in a smaller share of healthy people, so it raises suspicion without settling it."
+ },
+ "tromner": {
+  "term": "Trömner sign",
+  "definition": "A cousin of the Hoffmann sign: tapping the pad of the slightly flexed middle finger makes the thumb and index finger flex. Two small studies found it both more sensitive and more specific than the Hoffmann sign."
+ },
+ "babinski": {
+  "term": "Babinski sign",
+  "definition": "Stroking the sole of the foot makes the big toe extend upward instead of curling down. It is a very specific marker of damage to the motor pathways of the spinal cord or brain, but is absent in most people with cervical myelopathy."
+ },
+ "clonus": {
+  "term": "clonus",
+  "definition": "Rhythmic, involuntary muscle beating provoked by a sudden stretch, most often tested by briskly pushing the foot upward at the ankle. Like the Babinski sign it is highly specific for spinal cord injury but present in only about one patient in ten."
+ },
+ "invertedsupinator": {
+  "term": "inverted supinator sign",
+  "definition": "Tapping the brachioradialis tendon near the wrist produces finger flexion instead of, or in addition to, the expected elbow flexion. It localizes cord compression to the C5 to C6 level and is highly specific."
+ },
+ "lhermitte": {
+  "term": "Lhermitte sign",
+  "definition": "An electric-shock sensation running down the spine or into the limbs when the neck is flexed. It indicates irritation of the sensory pathways in the cervical cord and is seen in cervical myelopathy, multiple sclerosis, and vitamin B12 deficiency."
+ },
+ "romberg": {
+  "term": "Romberg test",
+  "definition": "The patient stands with feet together and eyes closed; swaying or falling indicates loss of position sense from the legs. It tests the dorsal columns of the spinal cord, which carry position sense and are often damaged in cervical myelopathy."
+ },
+ "tandemgait": {
+  "term": "tandem gait",
+  "definition": "Walking heel to toe along a line. Inability to do it is an early sign of the balance loss in cervical myelopathy and often precedes visible weakness."
+ },
+ "spasticity": {
+  "term": "spasticity",
+  "definition": "Velocity-dependent stiffness of muscles caused by loss of the brain's inhibitory control over spinal reflexes. In cervical myelopathy it produces stiff, scissoring legs and a slow, unsteady gait."
+ },
+ "paresthesia": {
+  "term": "paresthesia",
+  "plural": "paresthesias",
+  "definition": "Abnormal sensations such as tingling, pins and needles, or burning without an external cause. Hand paresthesias are among the earliest and commonest symptoms of degenerative cervical myelopathy and are easily blamed on carpal tunnel syndrome."
+ },
+ "dorsalcolumns": {
+  "term": "dorsal columns",
+  "definition": "The bundles of nerve fibers at the back of the spinal cord that carry fine touch, vibration, and position sense upward to the brain. Their damage explains the clumsy hands and poor balance of cervical myelopathy."
+ },
+ "corticospinaltract": {
+  "term": "corticospinal tract",
+  "definition": "The main motor pathway running from the brain's motor cortex down the side of the spinal cord to the motor neurons that move the limbs. Damage to it below the neck produces weakness, spasticity, and brisk reflexes in the legs."
+ },
+ "graymatter": {
+  "term": "gray matter",
+  "definition": "The butterfly-shaped core of the spinal cord containing nerve cell bodies, including the motor neurons in its front horns that supply the arm and hand muscles at each level. Its loss at the compressed level causes wasting and weakness of the hands."
+ },
+ "whitematter": {
+  "term": "white matter",
+  "definition": "The outer part of the spinal cord made of long, insulated nerve fibers running up and down. It carries the motor and sensory pathways whose damage produces symptoms below the level of compression."
+ },
+ "mjoa": {
+  "term": "modified Japanese Orthopaedic Association score (mJOA)",
+  "definition": "An 18-point clinician-rated scale of arm function, leg function, hand sensation, and bladder control, where 18 is normal. It defines severity: mild is 15 to 17, moderate 12 to 14, severe 11 or less, and it is the main outcome measure in treatment trials."
+ },
+ "nurick": {
+  "term": "Nurick grade",
+  "definition": "A six-step scale (0 to 5) of walking ability in cervical myelopathy, from root symptoms only through difficulty walking, inability to work, needing assistance, to being wheelchair or bed bound. Older and coarser than the mJOA, but simple."
+ },
+ "mcid": {
+  "term": "minimum clinically important difference (MCID)",
+  "definition": "The smallest change in a score that patients notice as a real improvement. For the mJOA it is about 1 point in mild disease, 2 in moderate, and 3 in severe, which is why a small average gain in mild disease is hard to interpret."
+ },
+ "t2hyperintensity": {
+  "term": "T2 hyperintensity",
+  "definition": "A bright spot inside the spinal cord on T2-weighted MRI, indicating excess water from swelling, inflammation, or tissue loss. It is common in cervical myelopathy but nonspecific, and on its own it does not settle whether the damage is reversible."
+ },
+ "t1hypointensity": {
+  "term": "T1 hypointensity",
+  "definition": "A dark area inside the cord on T1-weighted MRI. It usually reflects established tissue loss (myelomalacia) and, especially when paired with a T2 bright spot, predicts a poorer response to surgery."
+ },
+ "mri": {
+  "term": "magnetic resonance imaging (MRI)",
+  "definition": "The imaging method that shows soft tissue, including the spinal cord, discs, and ligaments, without radiation. It is the essential test for degenerative cervical myelopathy because X-rays and CT show bone but not the cord."
+ },
+ "compressionratio": {
+  "term": "compression ratio",
+  "definition": "The front-to-back thickness of the spinal cord divided by its side-to-side width on an axial MRI slice. A normal cord is roughly oval; a ratio of 0.4 or less marks a flattened cord and predicts progression to myelopathy."
+ },
+ "ssep": {
+  "term": "somatosensory evoked potentials (SSEPs)",
+  "definition": "Electrical responses recorded over the spine and scalp after stimulating a nerve in the arm or leg. Slowed conduction shows that the sensory pathways in the cord are damaged, and in people with silent compression it roughly triples the risk of later myelopathy."
+ },
+ "mep": {
+  "term": "motor evoked potentials (MEPs)",
+  "definition": "Muscle responses recorded after magnetic stimulation of the brain's motor cortex. A delayed response shows that the motor pathways in the spinal cord conduct slowly, and helps distinguish cord disease from motor neuron disease."
+ },
+ "emg": {
+  "term": "electromyography (EMG)",
+  "definition": "Recording the electrical activity of muscles with a fine needle. It detects loss of nerve supply to a muscle and is mainly used to identify nerve-root involvement or to exclude motor neuron disease and peripheral neuropathy."
+ },
+ "qmri": {
+  "term": "quantitative MRI",
+  "definition": "Advanced MRI measurements that put numbers on cord tissue: cross-sectional area, water diffusion along fibers (diffusion tensor imaging), and myelin content. Under study as a way to detect progression that clinical scales miss."
+ },
+ "ischemia": {
+  "term": "ischemia",
+  "definition": "Shortage of blood supply to a tissue. Chronic compression pinches the small arteries that feed the spinal cord, and this starvation of oxygen is thought to drive much of the cell loss in cervical myelopathy."
+ },
+ "bscb": {
+  "term": "blood–spinal cord barrier",
+  "definition": "The tight lining of the cord's blood vessels that normally keeps blood proteins and immune cells out of nervous tissue. Compression makes it leaky, admitting inflammatory cells that add to the injury."
+ },
+ "demyelination": {
+  "term": "demyelination",
+  "definition": "Loss of the fatty insulating sheath (myelin) around nerve fibers, which slows or blocks conduction. In cervical myelopathy the fibers of the corticospinal tract and dorsal columns lose myelin at and around the compressed level."
+ },
+ "oligodendrocyte": {
+  "term": "oligodendrocyte",
+  "plural": "oligodendrocytes",
+  "definition": "The cell type that makes and maintains myelin in the brain and spinal cord. Their death under chronic compression is a main cause of demyelination, and protecting them is a target of experimental drugs."
+ },
+ "reperfusioninjury": {
+  "term": "ischemia-reperfusion injury",
+  "definition": "Additional damage that occurs when blood flow suddenly returns to tissue that has adapted to a poor supply, releasing reactive oxygen species. It has been shown in animal models after surgical decompression and may explain why a minority of patients worsen after surgery."
+ },
+ "acdf": {
+  "term": "anterior cervical discectomy and fusion (ACDF)",
+  "definition": "Surgery through the front of the neck that removes a degenerated disc and any bone spurs behind it, then fuses the two vertebrae with a bone graft or cage and a plate. Suited to compression from the front at one or two levels."
+ },
+ "corpectomy": {
+  "term": "corpectomy",
+  "definition": "Removal of most of a vertebral body, together with the discs above and below, through the front of the neck, followed by reconstruction with a strut and plate. Used when compression from the front extends behind the vertebral body itself."
+ },
+ "laminectomy": {
+  "term": "laminectomy",
+  "definition": "Removal of the laminae, the bony roof of the spinal canal, from the back of the neck to give the cord room. It is usually combined with screws and rods (fusion) to prevent the neck from later slumping forward."
+ },
+ "laminoplasty": {
+  "term": "laminoplasty",
+  "definition": "A posterior operation that hinges the laminae open like a door and props them in the widened position, enlarging the canal while keeping motion and avoiding fusion. Suited to compression at several levels in a neck that keeps its normal curve."
+ },
+ "fusion": {
+  "term": "spinal fusion",
+  "definition": "Joining two or more vertebrae so they heal into one bone, using bone graft held by screws, plates, or rods. It stabilizes the decompressed segment at the cost of motion and of extra load on neighboring levels."
+ },
+ "c5palsy": {
+  "term": "C5 palsy",
+  "definition": "Weakness of the deltoid and biceps, the muscles supplied by the fifth cervical nerve root, appearing days after decompression surgery. It affects roughly 2% of patients in large series and usually recovers over months."
+ },
+ "dysphagia": {
+  "term": "dysphagia",
+  "definition": "Difficulty swallowing. It is the commonest complication of front-of-neck operations, because the esophagus is moved aside to reach the spine, and is usually temporary."
+ },
+ "pseudarthrosis": {
+  "term": "pseudarthrosis",
+  "definition": "Failure of a spinal fusion to heal into solid bone, leaving a persistent false joint that can cause pain or need revision surgery."
+ },
+ "adjacentsegment": {
+  "term": "adjacent segment disease",
+  "definition": "New degeneration at the level next to a fusion, thought to be accelerated by the extra motion and load that the fused segment transfers to it. It can require further surgery years later."
+ },
+ "kyphosis": {
+  "term": "kyphosis",
+  "definition": "Loss of the neck's normal curve so that the cervical spine bows the wrong way, convex toward the back. It drapes the cord over bone spurs at the front and is a reason to prefer front-of-neck surgery over a posterior approach."
+ },
+ "als": {
+  "term": "amyotrophic lateral sclerosis (ALS)",
+  "definition": "Motor neuron disease: progressive death of the nerve cells that drive muscles, causing weakness, wasting, and brisk reflexes without sensory loss. Its early hand weakness and mixed reflex pattern make it the most consequential mimic of cervical myelopathy."
+ },
+ "ms": {
+  "term": "multiple sclerosis (MS)",
+  "definition": "An inflammatory disease in which the immune system strips myelin from patches of the brain, optic nerves, and spinal cord. A spinal cord plaque can copy cervical myelopathy, but MS typically starts younger, relapses, and shows brain lesions."
+ },
+ "carpaltunnel": {
+  "term": "carpal tunnel syndrome",
+  "definition": "Compression of the median nerve at the wrist, causing numbness and tingling in the thumb, index, and middle fingers, often at night. It is the most frequent misdiagnosis in cervical myelopathy, which can produce similar hand symptoms in both hands at once."
+ },
+ "b12": {
+  "term": "subacute combined degeneration",
+  "definition": "Damage to the dorsal columns and corticospinal tracts from vitamin B12 deficiency (or, less often, copper deficiency), producing numb hands and feet, unsteady gait, and brisk reflexes. It is treatable and is checked with a blood test before attributing symptoms to compression."
+ },
+ "nph": {
+  "term": "normal pressure hydrocephalus",
+  "definition": "Enlargement of the brain's fluid spaces in older adults that produces a slow, shuffling, wide-based gait, urinary urgency, and cognitive slowing. Its gait and bladder symptoms overlap with cervical myelopathy, so it is a recognized mimic."
+ },
+ "syringomyelia": {
+  "term": "syringomyelia",
+  "definition": "A fluid-filled cavity that forms inside the spinal cord and slowly expands, typically causing loss of pain and temperature sensation in a cape-like pattern over the shoulders and arms. Visible on MRI and readily distinguished from compression."
+ },
+ "hsp": {
+  "term": "hereditary spastic paraplegia",
+  "definition": "A group of inherited disorders in which the long motor fibers to the legs slowly degenerate, producing progressive leg stiffness and gait difficulty. It mimics the leg findings of cervical myelopathy but has no cord compression and often a family history."
+ },
+ "myelomalacia": {
+  "term": "myelomalacia",
+  "definition": "Softening and loss of spinal cord tissue, the end result of long-standing compression and ischemia. It appears as a dark area on T1-weighted MRI and marks damage that surgery cannot reverse."
+ },
+ "relativerisk": {
+  "term": "relative risk (RR)",
+  "definition": "The probability of an outcome in an exposed group divided by the probability in an unexposed group. A relative risk of 3.0 means the outcome is three times as likely; the 95% confidence interval shows how precisely it is estimated."
+ },
+ "hazardratio": {
+  "term": "hazard ratio (HR)",
+  "definition": "A relative risk that accounts for time: the instantaneous rate of an event in one group divided by the rate in another over the follow-up period. A hazard ratio of 1.57 means events occur about 57% faster in the first group."
+ },
+ "qaly": {
+  "term": "quality-adjusted life year (QALY)",
+  "definition": "One year of life in perfect health, or the equivalent spread over more years at lower quality. Cost per QALY gained is the standard yardstick for judging whether a treatment is worth its price against a payer's willingness-to-pay threshold."
+ },
+ "grade": {
+  "term": "GRADE recommendation strength",
+  "definition": "A system for grading clinical guidance. A strong recommendation means most patients should receive the intervention; a weak (conditional) recommendation means the choice depends on the patient's values and circumstances. Each is paired with a rating of the quality of the underlying evidence, from very low to high."
+ },
+ "riluzole": {
+  "term": "riluzole",
+  "definition": "A drug that dampens excessive glutamate signaling and sodium entry into stressed neurons, approved for ALS. It protected the cord in animal models of myelopathy but did not improve the primary outcome in a large surgical trial."
+ },
+ "ibudilast": {
+  "term": "ibudilast",
+  "definition": "An anti-inflammatory phosphodiesterase inhibitor being tested as an add-on to decompression surgery for degenerative cervical myelopathy in the UK RECEDE-Myelopathy trial."
+ },
+ "neuroprotection": {
+  "term": "neuroprotection",
+  "definition": "Any treatment intended to keep nerve cells alive and functioning under injury, as opposed to relieving the cause of injury. In degenerative cervical myelopathy, neuroprotective drugs are being tested as companions to surgery, not replacements for it."
+ },
+ "recodedcm": {
+  "term": "AO Spine RECODE-DCM",
+  "definition": "An international, multi-stakeholder initiative (REsearch Objectives and Common Data Elements for Degenerative Cervical Myelopathy) that agreed a unifying name and definition for the disease, a top-ten list of research priorities, and a minimum data set for studies."
+ },
+ "jla": {
+  "term": "James Lind Alliance priority setting partnership",
+  "definition": "A structured process in which patients, carers, and clinicians jointly rank the unanswered research questions that matter most to them. It was used to produce the ten research priorities for degenerative cervical myelopathy."
+ },
+ "tetraplegia": {
+  "term": "tetraplegia",
+  "definition": "Loss of movement and sensation in all four limbs from damage to the cervical spinal cord. It is the end point of untreated, progressive cervical myelopathy and the reason the condition is treated as a slow spinal cord injury."
+ },
+ "autonomic": {
+  "term": "autonomic dysfunction",
+  "definition": "Disturbance of the involuntary nervous control of bladder, bowel, and sexual function. In cervical myelopathy it usually appears as urgency, frequency, or hesitancy, and reflects damage to pathways running through the cord."
+ },
+ "naturalhistory": {
+  "term": "natural history",
+  "definition": "How a disease unfolds over time without treatment. For degenerative cervical myelopathy the natural history is known only roughly, because most modern patients are operated on."
+ },
+ "systematicreview": {
+  "term": "systematic review and meta-analysis",
+  "definition": "A study that searches the literature by a preset protocol, appraises every eligible study, and (in a meta-analysis) pools their results into one estimate with a confidence interval. Pooled estimates for degenerative cervical myelopathy often have wide intervals because the underlying studies are small and varied."
+ },
+ "prevalence": {
+  "term": "prevalence and incidence",
+  "definition": "Prevalence is the share of a population that has a condition at a point in time; incidence is the rate at which new cases arise, often per 100,000 person-years. For degenerative cervical myelopathy both are minimum estimates because most cases are never diagnosed."
+ },
+ "dti": {
+  "term": "diffusion tensor imaging",
+  "definition": "An MRI technique that measures how freely water moves along versus across nerve fibers. Reduced directional diffusion indicates fiber injury, and a 2025 AO Spine review conditionally recommends diffusion-weighted signal changes for judging prognosis after surgery."
+ },
+ "nonop": {
+  "term": "structured rehabilitation",
+  "definition": "Supervised nonoperative care: physiotherapy for strength and balance, activity modification, and sometimes a soft collar, with scheduled reviews to detect deterioration. It is an option only for mild disease and has never been shown to reverse cord damage."
+ },
+ "sci": {
+  "term": "spinal cord injury (SCI)",
+  "definition": "Damage to the spinal cord that disrupts movement, sensation, or autonomic function below the injury. Degenerative cervical myelopathy is a slow, nontraumatic form; a compressed cord is also more vulnerable to sudden injury from a fall or whiplash."
+ },
+ "icd": {
+  "term": "International Classification of Diseases (ICD) code",
+  "definition": "The World Health Organization's coding system used in hospital records and statistics. Degenerative cervical myelopathy had no specific code, so cases are scattered across several codes and undercounted in administrative data."
+ },
+ "myelopathy": {
+  "term": "myelopathy",
+  "definition": "Any disease or injury of the spinal cord itself, as distinct from the nerve roots (radiculopathy) or peripheral nerves (neuropathy). The word says where the problem is, not what caused it."
+ }
+}
+</script>
+
+<script>
+(function () {
+  "use strict";
+
+  /* glossary: filled by make_glossary.py from glossary.json */
+  var G = JSON.parse(document.getElementById("glossary").textContent || "{}");
+
+  /* tooltip */
+  var tip = document.getElementById("tip");
+  var openEl = null;
+
+  function place(el) {
+    var r = el.getBoundingClientRect();
+    tip.style.left = "0px"; tip.style.top = "0px";
+    var tw = tip.offsetWidth, th = tip.offsetHeight;
+    var left = Math.min(Math.max(8, r.left + r.width / 2 - tw / 2), window.innerWidth - tw - 8);
+    var top = r.top - th - 10;
+    if (top < 8) top = r.bottom + 10;
+    tip.style.left = left + "px";
+    tip.style.top = top + "px";
+  }
+  function show(el) {
+    var g = G[el.getAttribute("data-g")];
+    if (!g) return;
+    tip.textContent = "";
+    var b = document.createElement("b");
+    b.textContent = g.term;
+    tip.appendChild(b);
+    tip.appendChild(document.createTextNode(g.definition));
+    tip.hidden = false;
+    place(el);
+    openEl = el;
+  }
+  function hide() { tip.hidden = true; openEl = null; }
+
+  document.querySelectorAll(".t").forEach(function (el) {
+    var g = G[el.getAttribute("data-g")];
+    if (!g) { console.warn("glossary key not defined:", el.getAttribute("data-g")); return; }
+    el.tabIndex = 0;
+    el.setAttribute("role", "button");
+    el.setAttribute("aria-label", g.term + ": " + g.definition);
+    el.addEventListener("mouseenter", function () { show(el); });
+    el.addEventListener("mouseleave", hide);
+    el.addEventListener("focus", function () { show(el); });
+    el.addEventListener("blur", hide);
+    el.addEventListener("click", function (e) {      /* touch: toggle */
+      e.stopPropagation();
+      if (openEl === el && !tip.hidden) hide(); else show(el);
+    });
+  });
+  document.addEventListener("click", hide);
+  window.addEventListener("scroll", function () { if (openEl) place(openEl); }, { passive: true });
+  window.addEventListener("resize", hide);
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape") hide(); });
+
+  /* scrollspy for the navigator */
+  var links = {};
+  document.querySelectorAll("nav.toc a").forEach(function (a) {
+    links[a.getAttribute("href").slice(1)] = a;
+  });
+  if ("IntersectionObserver" in window) {
+    var spy = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) {
+          Object.keys(links).forEach(function (k) { links[k].classList.remove("on"); });
+          var l = links[en.target.id];
+          if (l) l.classList.add("on");
+        }
+      });
+    }, { rootMargin: "-35% 0px -55% 0px" });
+    document.querySelectorAll("section.block").forEach(function (s) { spy.observe(s); });
+  }
+})();
+</script>
+</body>
+</html>

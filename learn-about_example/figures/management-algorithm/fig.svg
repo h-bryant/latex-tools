@@ -1,0 +1,48 @@
+<svg viewBox="0 0 740 410" role="img" aria-label="Flowchart. Cervical cord compression on MRI. If there are signs or symptoms of myelopathy, grade severity with the mJOA: severe (11 or less) and moderate (12 to 14) get surgery, a strong recommendation; mild (15 to 17) gets surgery or a supervised trial of structured rehabilitation with close follow-up, a weak recommendation, with surgery if the patient deteriorates and consideration of surgery if they fail to improve. If there is no myelopathy, ask about radiculopathy: with it, counsel on the higher risk and offer surgery or close follow-up; without it, no prophylactic surgery, counsel, teach warning signs, and follow up.">
+<defs><marker id="arr-coral" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="var(--coral)"/></marker><marker id="arr-ink2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="var(--ink-2)"/></marker></defs>
+<rect x="250" y="14" width="240" height="34" rx="8" fill="var(--surface)" stroke="var(--ink-2)" stroke-width="1"/>
+<text x="370" y="34.68" font-size="11.5" text-anchor="middle" fill="currentColor" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif" font-weight="600"><tspan x="370" dy="0">Cervical cord compression on MRI</tspan></text>
+<line x1="370" y1="48" x2="370" y2="76" stroke="var(--ink-2)" stroke-width="1.2" marker-end="url(#arr-ink2)" stroke-linecap="round"/>
+<rect x="235" y="78" width="270" height="36" rx="8" fill="var(--accent)" stroke="var(--accent)" stroke-width="1.2" fill-opacity="0.12"/>
+<text x="370" y="99.68" font-size="11.5" text-anchor="middle" fill="currentColor" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif" font-weight="600"><tspan x="370" dy="0">Signs or symptoms of myelopathy?</tspan></text>
+<polyline points="235,96 180,96 180,146" fill="none" stroke="var(--ink-2)" stroke-width="1.2" marker-end="url(#arr-ink2)" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="206" y="92" font-size="11" text-anchor="middle" fill="var(--accent)" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif" font-weight="600"><tspan x="206" dy="0">Yes</tspan></text>
+<rect x="95" y="148" width="170" height="34" rx="8" fill="var(--surface)" stroke="var(--ink-2)" stroke-width="1"/>
+<text x="180" y="168.68" font-size="11.5" text-anchor="middle" fill="currentColor" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif"><tspan x="180" dy="0">Grade severity with the mJOA</tspan></text>
+<polyline points="180,182 180,198 65,198 65,212" fill="none" stroke="var(--ink-2)" stroke-width="1.2" marker-end="url(#arr-ink2)" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="10" y="214" width="110" height="40" rx="8" fill="var(--surface)" stroke="var(--ink-2)" stroke-width="1"/>
+<text x="65" y="230.493" font-size="11.5" text-anchor="middle" fill="currentColor" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif" font-weight="600"><tspan x="65" dy="0">Severe</tspan></text>
+<text x="65" y="244.868" font-size="11.5" text-anchor="middle" fill="var(--ink-2)" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif"><tspan x="65" dy="0">mJOA 0–11</tspan></text>
+<line x1="65" y1="254" x2="65" y2="278" stroke="var(--ink-2)" stroke-width="1.2" marker-end="url(#arr-ink2)" stroke-linecap="round"/>
+<polyline points="180,182 180,198 185,198 185,212" fill="none" stroke="var(--ink-2)" stroke-width="1.2" marker-end="url(#arr-ink2)" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="130" y="214" width="110" height="40" rx="8" fill="var(--surface)" stroke="var(--ink-2)" stroke-width="1"/>
+<text x="185" y="230.493" font-size="11.5" text-anchor="middle" fill="currentColor" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif" font-weight="600"><tspan x="185" dy="0">Moderate</tspan></text>
+<text x="185" y="244.868" font-size="11.5" text-anchor="middle" fill="var(--ink-2)" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif"><tspan x="185" dy="0">mJOA 12–14</tspan></text>
+<line x1="185" y1="254" x2="185" y2="278" stroke="var(--ink-2)" stroke-width="1.2" marker-end="url(#arr-ink2)" stroke-linecap="round"/>
+<polyline points="180,182 180,198 315,198 315,212" fill="none" stroke="var(--ink-2)" stroke-width="1.2" marker-end="url(#arr-ink2)" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="260" y="214" width="110" height="40" rx="8" fill="var(--surface)" stroke="var(--ink-2)" stroke-width="1"/>
+<text x="315" y="230.493" font-size="11.5" text-anchor="middle" fill="currentColor" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif" font-weight="600"><tspan x="315" dy="0">Mild</tspan></text>
+<text x="315" y="244.868" font-size="11.5" text-anchor="middle" fill="var(--ink-2)" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif"><tspan x="315" dy="0">mJOA 15–17</tspan></text>
+<line x1="315" y1="254" x2="315" y2="278" stroke="var(--ink-2)" stroke-width="1.2" marker-end="url(#arr-ink2)" stroke-linecap="round"/>
+<rect x="10" y="280" width="230" height="48" rx="8" fill="var(--mark)" stroke="var(--mark)" stroke-width="1.2" fill-opacity="0.2"/>
+<text x="125" y="300.493" font-size="11.5" text-anchor="middle" fill="currentColor" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif" font-weight="600"><tspan x="125" dy="0">Surgery</tspan></text>
+<text x="125" y="314.868" font-size="11.5" text-anchor="middle" fill="var(--ink-2)" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif"><tspan x="125" dy="0">strong recommendation</tspan></text>
+<rect x="255" y="280" width="150" height="76" rx="8" fill="var(--note-bg)" stroke="var(--accent)" stroke-width="1.2"/>
+<text x="330" y="300.118" font-size="11.5" text-anchor="middle" fill="currentColor" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif"><tspan x="330" dy="0">Surgery, or a supervised</tspan><tspan x="330" dy="14.375">trial of structured</tspan><tspan x="330" dy="14.375">rehabilitation with</tspan><tspan x="330" dy="14.375">close follow-up (weak)</tspan></text>
+<line x1="330" y1="356" x2="330" y2="372" stroke="var(--coral)" stroke-width="1.2" marker-end="url(#arr-coral)" stroke-linecap="round"/>
+<rect x="245" y="374" width="170" height="32" rx="8" fill="var(--flag-bg)" stroke="var(--coral)" stroke-width="1.2"/>
+<text x="330" y="386.798" font-size="10.5" text-anchor="middle" fill="currentColor" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif"><tspan x="330" dy="0">Deteriorates: operate</tspan><tspan x="330" dy="13.125">Fails to improve: consider surgery</tspan></text>
+<polyline points="505,96 590,96 590,146" fill="none" stroke="var(--ink-2)" stroke-width="1.2" marker-end="url(#arr-ink2)" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="548" y="92" font-size="11" text-anchor="middle" fill="var(--accent)" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif" font-weight="600"><tspan x="548" dy="0">No</tspan></text>
+<rect x="470" y="148" width="240" height="44" rx="8" fill="var(--accent)" stroke="var(--accent)" stroke-width="1.2" fill-opacity="0.12"/>
+<text x="590" y="166.493" font-size="11.5" text-anchor="middle" fill="currentColor" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif" font-weight="600"><tspan x="590" dy="0">Radiculopathy?</tspan></text>
+<text x="590" y="180.868" font-size="11.5" text-anchor="middle" fill="var(--ink-2)" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif"><tspan x="590" dy="0">nerve-root pain, weakness, or numbness</tspan></text>
+<polyline points="520,192 520,232" fill="none" stroke="var(--ink-2)" stroke-width="1.2" marker-end="url(#arr-ink2)" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="508" y="216" font-size="11" text-anchor="end" fill="var(--accent)" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif" font-weight="600"><tspan x="508" dy="0">Yes</tspan></text>
+<polyline points="660,192 660,232" fill="none" stroke="var(--ink-2)" stroke-width="1.2" marker-end="url(#arr-ink2)" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="672" y="216" font-size="11" text-anchor="start" fill="var(--accent)" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif" font-weight="600"><tspan x="672" dy="0">No</tspan></text>
+<rect x="445" y="234" width="150" height="92" rx="8" fill="var(--note-bg)" stroke="var(--accent)" stroke-width="1.2"/>
+<text x="520" y="254.93" font-size="11.5" text-anchor="middle" fill="currentColor" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif"><tspan x="520" dy="0">Higher risk: counsel;</tspan><tspan x="520" dy="14.375">offer surgery, or close</tspan><tspan x="520" dy="14.375">serial follow-up or</tspan><tspan x="520" dy="14.375">structured rehabilitation</tspan><tspan x="520" dy="14.375">(weak)</tspan></text>
+<rect x="600" y="234" width="135" height="92" rx="8" fill="var(--note-bg)" stroke="var(--accent)" stroke-width="1.2"/>
+<text x="667.5" y="254.93" font-size="11.5" text-anchor="middle" fill="currentColor" font-family="Source Sans 3, Segoe UI, system-ui, sans-serif"><tspan x="667.5" dy="0">No prophylactic</tspan><tspan x="667.5" dy="14.375">surgery; counsel,</tspan><tspan x="667.5" dy="14.375">teach warning signs,</tspan><tspan x="667.5" dy="14.375">follow up clinically</tspan><tspan x="667.5" dy="14.375">(weak)</tspan></text>
+</svg>

@@ -1,0 +1,20 @@
+# LaTeX build products (keep the PDF)
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.toc
+*.glsdefs
+*.synctex.gz
+*.glo
+*.gls
+*.glg
+*.ist
+.venv/
+.DS_Store
+__pycache__/
